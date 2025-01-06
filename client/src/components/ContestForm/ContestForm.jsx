@@ -1,10 +1,10 @@
 import React from 'react';
 import { Form, Formik } from 'formik';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import CONSTANTS from '../../constants';
 import { getDataForContest } from '../../store/slices/dataForContestSlice';
 import styles from './ContestForm.module.sass';
+import withRouter from '../../hocs/withRouter';
 import Spinner from '../Spinner/Spinner';
 import FormInput from '../FormInput/FormInput';
 import SelectInput from '../SelectInput/SelectInput';
@@ -53,6 +53,12 @@ class ContestForm extends React.Component {
 
   componentDidMount() {
     this.getPreference();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.contestType !== this.props.contestType) {
+      this.getPreference();
+    }
   }
 
   render() {

@@ -14,7 +14,7 @@ class LoginForm extends React.Component {
   }
 
   clicked = (values) => {
-    this.props.loginRequest({ data: values, history: this.props.history });
+    this.props.loginRequest({ data: values, navigate: this.props.navigate });
   };
 
   render() {
@@ -82,8 +82,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  loginRequest: ({ data, history }) =>
-    dispatch(checkAuth({ data, history, authMode: CONSTANTS.AUTH_MODE.LOGIN })),
+  loginRequest: ({ data, navigate }) =>
+    dispatch(checkAuth({ data, navigate, authMode: CONSTANTS.AUTH_MODE.LOGIN })),
   authClear: () => dispatch(clearAuth()),
 });
 

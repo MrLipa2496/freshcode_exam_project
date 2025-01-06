@@ -1,16 +1,17 @@
 import React, { useRef } from 'react';
 import { connect } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import styles from './ContestCreationPage.module.sass';
 import { saveContestToStore } from '../../store/slices/contestCreationSlice';
 import NextButton from '../../components/NextButton/NextButton';
 import ContestForm from '../../components/ContestForm/ContestForm';
 import BackButton from '../../components/BackButton/BackButton';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
 
 const ContestCreationPage = (props) => {
   const formRef = useRef();
+  const navigate = useNavigate();
+
   const contestData = props.contestCreationStore.contests[props.contestType]
     ? props.contestCreationStore.contests[props.contestType]
     : { contestType: props.contestType };
@@ -20,8 +21,8 @@ const ContestCreationPage = (props) => {
     const route =
       props.bundleStore.bundle[props.contestType] === 'payment'
         ? '/payment'
-        : `${props.bundleStore.bundle[props.contestType]}Contest`;
-    props.history.push(route);
+        : `/startContest/${props.bundleStore.bundle[props.contestType]}Contest`;
+    navigate(route);
   };
 
   const submitForm = () => {
@@ -30,11 +31,10 @@ const ContestCreationPage = (props) => {
     }
   };
 
-  !props.bundleStore.bundle && props.history.replace('/startContest');
+  !props.bundleStore.bundle && navigate('/startContest', {replace: true});
 
   return (
     <div>
-      <Header />
       <div className={styles.startContestHeader}>
         <div className={styles.startContestInfo}>
           <h2>{props.title}</h2>
@@ -63,7 +63,6 @@ const ContestCreationPage = (props) => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

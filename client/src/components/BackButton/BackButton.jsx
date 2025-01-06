@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import withRouter from '../../hocs/withRouter';
 import styles from './BackButton.module.sass';
 
 const BackButton = props => {
   function clickHandler () {
-    props.history.goBack();
+    props.navigate(-1);
   }
 
   return (

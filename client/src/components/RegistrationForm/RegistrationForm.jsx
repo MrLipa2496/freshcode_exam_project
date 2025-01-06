@@ -25,7 +25,7 @@ class RegistrationForm extends React.Component {
         password: values.password,
         role: values.role,
       },
-      history: this.props.history,
+      navigate: this.props.navigate,
     });
   };
 
@@ -162,9 +162,9 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  register: ({ data, history }) =>
+  register: ({ data, navigate }) =>
     dispatch(
-      checkAuth({ data, history, authMode: CONSTANTS.AUTH_MODE.REGISTER })
+      checkAuth({ data, navigate, authMode: CONSTANTS.AUTH_MODE.REGISTER })
     ),
   authClear: () => dispatch(clearAuth()),
 });

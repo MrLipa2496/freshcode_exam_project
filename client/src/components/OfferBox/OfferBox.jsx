@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Rating from 'react-rating';
-import { withRouter } from 'react-router-dom';
 import isEqual from 'lodash/isEqual';
 import classNames from 'classnames';
 import { confirmAlert } from 'react-confirm-alert';
+import withRouter from '../../hocs/withRouter';
 import { goToExpandedDialog } from '../../store/slices/chatSlice';
 import {
   changeMark,

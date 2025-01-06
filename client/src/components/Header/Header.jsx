@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.sass';
 import CONSTANTS from '../../constants';
 import { clearUserStore } from '../../store/slices/userSlice';
 import { getUser } from '../../store/slices/userSlice';
+import withRouter from '../../hocs/withRouter';
 
 class Header extends React.Component {
   componentDidMount() {
@@ -16,11 +17,11 @@ class Header extends React.Component {
   logOut = () => {
     localStorage.clear();
     this.props.clearUserStore();
-    this.props.history.replace('/login');
+    this.props.navigate('/login', { replace: true });
   };
 
   startContests = () => {
-    this.props.history.push('/startContest');
+    this.props.navigate('/startContest');
   };
 
   renderLoginButtons = () => {

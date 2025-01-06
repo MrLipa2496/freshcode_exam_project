@@ -32,7 +32,6 @@ const Home = props => {
     ];
   return (
     <>
-      <Header />
       {isFetching ? (
         <Spinner />
       ) : (
@@ -258,7 +257,6 @@ const Home = props => {
               />
             </div>
           </div>
-          <Footer />
         </>
       )}
     </>

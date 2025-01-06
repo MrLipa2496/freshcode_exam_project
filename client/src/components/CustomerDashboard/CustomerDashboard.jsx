@@ -39,7 +39,7 @@ class CustomerDashboard extends React.Component {
   }
 
   goToExtended = contest_id => {
-    this.props.history.push(`/contest/${contest_id}`);
+    this.props.navigate(`/contest/${contest_id}`);
   };
 
   setContestList = () => {
@@ -119,7 +119,7 @@ class CustomerDashboard extends React.Component {
             <ContestsContainer
               isFetching={this.props.isFetching}
               loadMore={this.loadMore}
-              history={this.props.history}
+              navigate={this.props.navigate}
               haveMore={haveMore}
             >
               {this.setContestList()}

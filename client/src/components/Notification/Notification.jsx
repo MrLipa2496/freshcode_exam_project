@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import withRouter from '../../hocs/withRouter';
 import styles from './Notification.module.sass';
 
 const Notification = props => (
@@ -9,7 +9,7 @@ const Notification = props => (
     <br />
     {props.contestId && (
       <span
-        onClick={() => props.history.push(`/contest/${props.contestId}`)}
+        onClick={() => props.navigate(`/contest/${props.contestId}`)}
         className={styles.goToContest}
       >
         Go to contest

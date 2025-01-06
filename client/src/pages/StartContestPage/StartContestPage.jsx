@@ -1,17 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { updateBundle } from '../../store/slices/bundleSlice';
 import BundleBox from '../../components/BundleBox/BundleBox';
 import CONSTANTS from '../../constants';
 import styles from './StartContestPage.module.sass';
-import Footer from '../../components/Footer/Footer';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
-import Header from '../../components/Header/Header';
 
 const StartContestPage = props => {
+  const navigate = useNavigate();
+
   if (props.userStore.data.role !== CONSTANTS.CUSTOMER) {
-    props.history.replace('/');
+    navigate('/', { replace: true });
   }
 
   const setBundle = bundleStr => {
@@ -22,12 +22,11 @@ const StartContestPage = props => {
       bundleList[array[i]] = i === array.length - 1 ? 'payment' : array[i + 1];
     }
     props.choseBundle(bundleList);
-    props.history.push(`/startContest/${bundleList.first}Contest`);
+    navigate(`/startContest/${bundleList.first}Contest`);
   };
 
   return (
     <div>
-      <Header />
       <div className={styles.startContestHeader}>
         <div className={styles.startContestInfo}>
           <h2>START A CONTEST</h2>
@@ -110,7 +109,6 @@ const StartContestPage = props => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

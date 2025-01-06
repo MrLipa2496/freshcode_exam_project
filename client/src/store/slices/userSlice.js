@@ -14,12 +14,12 @@ const initialState = {
 
 export const getUser = createAsyncThunk(
   `${USER_SLICE_NAME}/getUser`,
-  async (replace, { rejectWithValue }) => {
+  async (navigate, { rejectWithValue }) => {
     try {
       const { data } = await restController.getUser();
       controller.subscribe(data.id);
-      if (replace) {
-        replace('/');
+      if (navigate) {
+        navigate('/', { replace: true });
       }
       return data;
     } catch (err) {

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import classNames from 'classnames';
 import isEqual from 'lodash/isEqual';
 import LightBox from 'react-18-image-lightbox';
+import withRouter from '../../hocs/withRouter';
 import { goToExpandedDialog } from '../../store/slices/chatSlice';
 import {
   getContestById,
@@ -34,8 +35,8 @@ class ContestPage extends React.Component {
   }
 
   getData = () => {
-    const { params } = this.props.match;
-    this.props.getData({ contestId: params.id });
+    const { id } = this.props.params;
+    this.props.getData({ contestId: id });
   };
 
   setOffersList = () => {
@@ -144,7 +145,6 @@ class ContestPage extends React.Component {
             }
           />
         )}
-        <Header />
         {error ? (
           <div className={styles.tryContainer}>
             <TryAgain getData={getData} />
@@ -227,4 +227,4 @@ const mapDispatchToProps = (dispatch) => ({
   changeShowImage: (data) => dispatch(changeShowImage(data)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ContestPage);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(ContestPage));
