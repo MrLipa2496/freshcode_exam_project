@@ -21,4 +21,15 @@ module.exports = {
       {}
     );
   },
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete(
+      'Banks',
+      {
+        cardNumber: {
+          [Sequelize.Op.in]: ['4564654564564564', '4111111111111111'],
+        },
+      },
+      {}
+    );
+  },
 };
