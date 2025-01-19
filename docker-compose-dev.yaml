@@ -3,7 +3,6 @@ services:
   front-react:
     build:
       context: ./client
-
     environment:
       NODE_ENV: development
     depends_on:
@@ -17,11 +16,10 @@ services:
   server-dev:
     build:
       context: ./server
-
     environment:
       NODE_ENV: development
     ports:
-      - '3000:3000'
+      - '3001:3001' 
     depends_on:
       - db-dev
       - mongo-dev
