@@ -22,7 +22,7 @@ RUN chown -R node:node /server/node_modules
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3001
 
 # CMD sequelize db:migrate && sequelize db:seed:all && npm start
 CMD npm start
