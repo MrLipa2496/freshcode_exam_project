@@ -1,56 +1,9 @@
 import React from 'react';
-import { FaBolt, FaDesktop, FaLightbulb } from 'react-icons/fa';
 import styles from './HowItWorks.module.sass';
 import CONSTANTS from './../../constants';
 import Card from '../../components/Card/Card';
 
 function HowItWorks () {
-  const cardsData = [
-    {
-      logo: `${CONSTANTS.STATIC_IMAGES_PATH}svg/how-it-works-card-icon-1.svg`,
-      title: 'Launch a Contest',
-      description:
-        'Work with hundreds of creative experts to get custom name suggestions for your business or brand. All names are auto-checked for URL availability.',
-      buttonText: 'Launch a Contest',
-    },
-    {
-      logo: `${CONSTANTS.STATIC_IMAGES_PATH}svg/how-it-works-card-icon-2.svg`,
-      title: 'Explore Names For Sale',
-      description:
-        'Our branding team has curated thousands of pre-made names that you can purchase instantly. All names include a matching URL and a complimentary Logo Design.',
-      buttonText: 'Explore Names For Sale',
-    },
-    {
-      logo: `${CONSTANTS.STATIC_IMAGES_PATH}svg/how-it-works-card-icon-3.svg`,
-      title: 'Agency-level Managed Contests',
-      description:
-        'Our Managed contests combine the power of crowdsourcing with the rich experience of our branding consultants. Get a complete agency-level experience at a fraction of Agency costs.',
-      buttonText: 'Learn More',
-    },
-  ];
-
-  const steps = [
-    {
-      title: 'Step 1',
-      description:
-        'Fill out your Naming Brief and begin receiving name ideas in minutes.',
-    },
-    {
-      title: 'Step 2',
-      description:
-        'Rate the submissions and provide feedback to creatives. Creatives submit even more names based on your feedback.',
-    },
-    {
-      title: 'Step 3',
-      description:
-        'Our team helps you test your favorite names with your target audience. We also assist with Trademark screening.',
-    },
-    {
-      title: 'Step 4',
-      description: 'Pick a Winner. The winner gets paid for their submission.',
-    },
-  ];
-
   return (
     <>
       <div className={styles.wrapper}>
@@ -80,7 +33,7 @@ function HowItWorks () {
             Atom offers 3 ways to get you a perfect name for your business.
           </p>
           <div className={styles.cardsContainer}>
-            {cardsData.map((card, index) => (
+            {CONSTANTS.CARDS_DATA.map((card, index) => (
               <Card
                 key={index}
                 logo={card.logo}
@@ -102,8 +55,8 @@ function HowItWorks () {
           </div>
           <h2 className={styles.stepsTitle}>How Do Naming Contests Work?</h2>
           <div className={styles.stepsContainer}>
-            {steps.map((step, index) => {
-              const isLastStep = index === steps.length - 1;
+            {CONSTANTS.STEPS.map((step, index) => {
+              const isLastStep = index === CONSTANTS.STEPS.length - 1;
               return (
                 <Card
                   key={index}
