@@ -29,6 +29,28 @@ function HowItWorks () {
     },
   ];
 
+  const steps = [
+    {
+      title: 'Step 1',
+      description:
+        'Fill out your Naming Brief and begin receiving name ideas in minutes.',
+    },
+    {
+      title: 'Step 2',
+      description:
+        'Rate the submissions and provide feedback to creatives. Creatives submit even more names based on your feedback.',
+    },
+    {
+      title: 'Step 3',
+      description:
+        'Our team helps you test your favorite names with your target audience. We also assist with Trademark screening.',
+    },
+    {
+      title: 'Step 4',
+      description: 'Pick a Winner. The winner gets paid for their submission.',
+    },
+  ];
+
   return (
     <>
       <div className={styles.wrapper}>
@@ -67,6 +89,31 @@ function HowItWorks () {
                 buttonText={card.buttonText}
               />
             ))}
+          </div>
+        </section>
+
+        <section className={styles.steps}>
+          <div className={styles.imgWrapper}>
+            <img
+              className={styles.cupImg}
+              src={`${CONSTANTS.STATIC_IMAGES_PATH}/svg/how-it-works-card-section-3-icon.svg`}
+              alt='Cup icon'
+            />
+          </div>
+          <h2 className={styles.stepsTitle}>How Do Naming Contests Work?</h2>
+          <div className={styles.stepsContainer}>
+            {steps.map((step, index) => {
+              const isLastStep = index === steps.length - 1;
+              return (
+                <Card
+                  key={index}
+                  title={step.title}
+                  description={step.description}
+                  variant='steps'
+                  isLastStep={isLastStep}
+                />
+              );
+            })}
           </div>
         </section>
       </div>

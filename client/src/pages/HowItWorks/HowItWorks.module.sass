@@ -1,4 +1,5 @@
 $second-section-bgc: #f3fbfc
+$third-section-bgc: #f8f9ff
 $title-color: #19184A
   
 .namingPlatform
@@ -33,11 +34,12 @@ $title-color: #19184A
   border-radius: 40px
   margin: 0 auto
 
-.title,.useTitle
+.title,.useTitle, .stepsTitle
   font-size: 40px
   font-weight: 700
   margin: 20px 0
   color: $title-color
+
 
   @media (max-width: 960px)
     font-size: 28px
@@ -78,10 +80,29 @@ $title-color: #19184A
   margin-bottom: 30px
   color: $title-color
 
-.cardsContainer
+.cardsContainer, .stepsContainer
   display: flex
   justify-content: center
   flex-wrap: wrap
 
+.steps
+  padding: 60px 0
+  background-color: $third-section-bgc
+
+.imgWrapper
+  display: flex
+  justify-content: center
+
+.cupImg
+  width: 70px
+  height: 70px
+
+.stepsTitle
+  text-align: center
 
 
+.stepsContainer
+  max-width: 1140px
+  flex-wrap: wrap
+  margin: 0 auto
+  padding: 10px
