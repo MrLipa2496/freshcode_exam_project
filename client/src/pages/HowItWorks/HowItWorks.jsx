@@ -53,7 +53,7 @@ function HowItWorks () {
               alt='Cup icon'
             />
           </div>
-          <h2 className={styles.stepsTitle}>How Do Naming Contests Work?</h2>
+          <h2 className={styles.secondTitle}>How Do Naming Contests Work?</h2>
           <div className={styles.stepsContainer}>
             {CONSTANTS.STEPS.map((step, index) => {
               const isLastStep = index === CONSTANTS.STEPS.length - 1;
@@ -68,6 +68,10 @@ function HowItWorks () {
               );
             })}
           </div>
+        </section>
+
+        <section>
+          <h2 className={styles.secondTitle}>Frequently Asked Questions</h2>
         </section>
       </div>
     </>
