@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './HowItWorks.module.sass';
 import CONSTANTS from './../../constants';
 import Card from '../../components/Card/Card';
+import FAQSection from '../../components/FAQSection/FAQSection';
 
 function HowItWorks () {
   return (
@@ -70,8 +71,9 @@ function HowItWorks () {
           </div>
         </section>
 
-        <section>
+        <section className={styles.faq}>
           <h2 className={styles.secondTitle}>Frequently Asked Questions</h2>
+          <FAQSection />
         </section>
       </div>
     </>
