@@ -1,0 +1,111 @@
+$second-section-bgc: #f3fbfc
+$third-section-bgc: #f8f9ff
+$title-color: #19184A
+  
+.namingPlatform
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  align-content: center
+  gap: 20px
+  margin: 0 auto
+  padding: 40px 20px
+  max-width: 1040px
+
+  @media (max-width: 960px)
+    flex-direction: column
+
+.namingPlatformInfo
+  max-width: 50%
+
+  @media (max-width: 960px)
+    max-width: 100%
+    text-align: center
+    order: 2 
+
+.subTitle
+  font-size: 14px
+  padding: 10px 20px
+  display: inline-block
+  text-align: center
+  background-color: rgba(55, 125, 255, 0.1)
+  color: #377dff
+  border-radius: 40px
+  margin: 0 auto
+
+.title,.useTitle, .secondTitle
+  font-size: 40px
+  font-weight: 700
+  margin: 20px 0
+  color: $title-color
+
+
+  @media (max-width: 960px)
+    font-size: 28px
+
+.npContent
+  color: rgba(25, 24, 74, 0.5)
+  line-height: 1.5
+
+  @media (max-width: 960px)
+    max-width: 600px
+
+.imgContainer
+  max-width: 45%
+  text-align: center
+
+  @media (max-width: 960px)
+    max-width: 600px
+    order: 1  
+
+.videoPoster
+  max-width: 600px
+  width: 100%
+  border-radius: 20px
+
+.services
+  display: flex
+  flex-direction: column
+  padding: 80px 10px
+  background: linear-gradient(to bottom right, $second-section-bgc 0%, #f5f9ff 100%)
+ 
+
+.useTitle
+  display: flex
+  justify-content: center
+
+.servicesInfo
+  text-align: center
+  margin-bottom: 30px
+  color: $title-color
+
+.cardsContainer, .stepsContainer
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+.steps
+  padding: 60px 0
+  background-color: $third-section-bgc
+
+.imgWrapper
+  display: flex
+  justify-content: center
+
+.cupImg
+  width: 70px
+  height: 70px
+
+.secondTitle
+  text-align: center
+  line-height: 1.5
+
+.stepsContainer
+  max-width: 1140px
+  flex-wrap: wrap
+  margin: 0 auto
+  padding: 10px
+
+.faq
+  padding: 80px 20px
