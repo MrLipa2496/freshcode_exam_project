@@ -21,6 +21,7 @@ import Layout from './pages/Layout/Layout';
 import OnlyNotAuthorizedUserRoute from './components/Routes/OnlyNotAuthorizedUserRoute/OnlyNotAuthorizedUserRoute';
 import PrivateRoute from './components/Routes/PrivateRoute/PrivateRoute';
 import HowItWorks from './pages/HowItWorks/HowItWorks';
+import EventsPage from './pages/EventsPage/EventsPage';
 class App extends Component {
   render () {
     return (
@@ -79,6 +80,7 @@ class App extends Component {
               <Route path='/dashboard' element={<Dashboard />} />
               <Route path='/contest/:id' element={<ContestPage />} />
               <Route path='/account' element={<UserProfile />} />
+              <Route path='/events' element={<EventsPage />} />
             </Route>
             <Route path='*' element={<NotFound />} />
           </Route>
