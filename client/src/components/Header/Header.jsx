@@ -6,13 +6,29 @@ import CONSTANTS from '../../constants';
 import { clearUserStore } from '../../store/slices/userSlice';
 import { getUser } from '../../store/slices/userSlice';
 import withRouter from '../../hocs/withRouter';
+import BadgeNotification from '../BadgeNotification/BadgeNotification';
+import {
+  selectActiveNotifications,
+  markNotificationsAsViewed,
+} from '../../store/slices/eventsSlice';
 
 class Header extends React.Component {
   componentDidMount () {
     if (!this.props.data) {
       this.props.getUser();
     }
+    this.notificationInterval = setInterval(() => {
+      this.props.updateEvents();
+    }, 5000);
   }
+
+  componentWillUnmount () {
+    clearInterval(this.notificationInterval);
+  }
+
+  handleViewEvents = () => {
+    this.props.markNotificationsAsViewed();
+  };
 
   logOut = () => {
     localStorage.clear();
@@ -26,6 +42,7 @@ class Header extends React.Component {
 
   renderLoginButtons = () => {
     if (this.props.data) {
+      const { notifications } = this.props;
       return (
         <>
           <div className={styles.userInfo}>
@@ -37,7 +54,10 @@ class Header extends React.Component {
               }
               alt='user'
             />
-            <span>{`Hi, ${this.props.data.displayName}`}</span>
+            <span className={styles.displayName}>
+              {`Hi, ${this.props.data.displayName}`}
+              <BadgeNotification count={notifications} />
+            </span>
             <img
               src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
               alt='menu'
@@ -54,8 +74,10 @@ class Header extends React.Component {
                 </Link>
               </li>
               <li>
-                <Link to='/events' style={{ textDecoration: 'none' }}>
-                  <span>My Events</span>
+                <Link to='/events' onClick={this.handleViewEvents}>
+                  <span className={styles.events}>
+                    My Events <BadgeNotification count={notifications} />
+                  </span>
                 </Link>
               </li>
               <li>
@@ -283,10 +305,15 @@ class Header extends React.Component {
   }
 }
 
-const mapStateToProps = state => state.userStore;
+const mapStateToProps = state => ({
+  ...state.userStore,
+  notifications: selectActiveNotifications(state),
+});
 const mapDispatchToProps = dispatch => ({
   getUser: () => dispatch(getUser()),
   clearUserStore: () => dispatch(clearUserStore()),
+  markNotificationsAsViewed: () => dispatch(markNotificationsAsViewed()),
+  updateEvents: () => dispatch({ type: 'events/updateEvents' }),
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
