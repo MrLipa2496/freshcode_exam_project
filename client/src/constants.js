@@ -14,6 +14,8 @@ export default {
   OFFER_STATUS_REJECTED: 'rejected',
   OFFER_STATUS_WON: 'won',
   OFFER_STATUS_PENDING: 'pending',
+  EVENTS_STORAGE_KEY: 'events',
+  VIEWED_NOTIFICATIONS_KEY: 'viewed_notifications',
   STATIC_IMAGES_PATH: STATIC_IMAGES_PATH,
   ANONYM_IMAGE_PATH: '/staticImages/anonym.png',
   BASE_URL: `http://${serverIP}:${serverPort}/`,
