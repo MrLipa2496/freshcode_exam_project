@@ -1,0 +1,63 @@
+.container
+  display: flex
+  flex-direction: column
+  gap: 16px
+
+.title
+  font-size: 19px
+  color: #585858
+  font-weight: 700
+  margin: 12px 0 5px 0
+
+.btnContainer
+  display: flex
+  gap: 10px
+  max-width: 550px
+
+  @media (max-width: 580px)
+    flex-direction: column
+
+.option
+  position: relative
+  padding: 16px
+  flex: 1
+  border: 2px solid #d1d5db
+  border-radius: 8px
+  cursor: pointer
+
+.selected
+  border: 2px  solid #3b82f6
+  background-color: #eff6ff
+
+.optionHeader
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 20px
+
+.optionLabel
+  font-size: 18px
+  font-weight: 700
+
+.recommended
+  position: absolute
+  top: -10px
+  left: 50%
+  transform: translateX(-50%)
+  font-size: 14px
+  color: #3b82f6
+  background-color: #dbeafe
+  padding: 4px 8px
+  border-radius: 4px
+
+.optionDescription
+  color: #6b7280
+  font-size: 14px
+  line-height: 1.4
+
+.note
+  color: #848484
+  font-size: 13px
+  font-weight: 400
+  line-height: 1.5
+  margin-top: 8px
