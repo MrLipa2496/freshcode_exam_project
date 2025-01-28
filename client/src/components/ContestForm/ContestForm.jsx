@@ -13,6 +13,7 @@ import FormTextArea from '../InputComponents/FormTextArea/FormTextArea';
 import TryAgain from '../TryAgain/TryAgain';
 import Schems from '../../utils/validators/validationSchems';
 import OptionalSelects from '../OptionalSelects/OptionalSelects';
+import ButtonGroup from '../ButtonGroup/ButtonGroup';
 
 const variableOptions = {
   [CONSTANTS.NAME_CONTEST]: {
@@ -145,6 +146,7 @@ class ContestForm extends React.Component {
                 />
               </div>
               <OptionalSelects {...this.props} />
+              <ButtonGroup />
               <FieldFileInput
                 name='file'
                 classes={{
