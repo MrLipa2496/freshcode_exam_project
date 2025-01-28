@@ -256,4 +256,22 @@ export default {
       ],
     },
   },
+  BTN_GROUP_OPTIONS: [
+    {
+      id: 'YesWithVariations',
+      label: 'Yes',
+      description: 'But minor variations are allowed',
+      recommended: true,
+    },
+    {
+      id: 'ExactMatch',
+      label: 'Yes',
+      description: 'The Domain should exactly match the name',
+    },
+    {
+      id: 'NoDomain',
+      label: 'No',
+      description: 'I am only looking for a name, not a Domain',
+    },
+  ],
 };
