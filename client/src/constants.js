@@ -93,6 +93,65 @@ export default {
       items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy'],
     },
   ],
+  MENU_ITEMS: [
+    {
+      title: 'NAME IDEAS',
+      subItems: [
+        { name: 'Beauty', path: '/beauty' },
+        { name: 'Consulting', path: '/consulting' },
+        { name: 'E-Commerce', path: '/e-commerce' },
+        { name: 'Fashion & Clothing', path: '/fashion' },
+        { name: 'Finance', path: '/finance' },
+        { name: 'Real Estate', path: '/real-estate' },
+        { name: 'Tech', path: '/tech' },
+        { name: 'More Categories', path: '/more' },
+      ],
+    },
+    {
+      title: 'CONTESTS',
+      subItems: [
+        { name: 'HOW IT WORKS', path: '/how-it-works' },
+        { name: 'PRICING', path: '/pricing' },
+        { name: 'AGENCY SERVICE', path: '/agency-service' },
+        { name: 'ACTIVE CONTESTS', path: '/active-contests' },
+        { name: 'WINNERS', path: '/winners' },
+        { name: 'LEADERBOARD', path: '/leaderboard' },
+        { name: 'BECOME A CREATIVE', path: '/become-a-creative' },
+      ],
+    },
+    {
+      title: 'OUR WORK',
+      subItems: [
+        { name: 'NAMES', path: '/names' },
+        { name: 'TAGLINES', path: '/taglines' },
+        { name: 'LOGOS', path: '/logos' },
+        { name: 'TESTIMONIALS', path: '/testimonials' },
+      ],
+    },
+    {
+      title: 'NAMES FOR SALE',
+      subItems: [
+        { name: 'POPULAR NAMES', path: '/popular' },
+        { name: 'SHORT NAMES', path: '/short' },
+        { name: 'INTRIGUING NAMES', path: '/intriguing' },
+        { name: 'NAMES BY CATEGORY', path: '/category' },
+        { name: 'VISUAL NAME SEARCH', path: '/visual' },
+        { name: 'SELL YOUR DOMAINS', path: '/sell-your-domains' },
+      ],
+    },
+    {
+      title: 'BLOG',
+      subItems: [
+        { name: 'ULTIMATE NAMING GUIDE', path: '/naming-guide' },
+        {
+          name: 'POETIC DEVICES IN BUSINESS NAMING',
+          path: '/poetic-devices',
+        },
+        { name: 'CROWDED BAR THEORY', path: '/crowded-bar-theory' },
+        { name: 'ALL ARTICLES', path: '/articles' },
+      ],
+    },
+  ],
   CARDS_DATA: [
     {
       logo: `${STATIC_IMAGES_PATH}svg/how-it-works-card-icon-1.svg`,
