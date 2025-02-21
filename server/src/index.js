@@ -17,8 +17,9 @@ app.use(cors());
 app.use(express.json());
 app.use('/public', express.static('public'));
 app.use(router);
-app.use(handlerError);
+
 app.use(errorHandler);
+app.use(handlerError);
 
 process.on('uncaughtException', err => {
   logError(err);
