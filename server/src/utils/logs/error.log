@@ -1,0 +1,6 @@
+{"message":"Test Uncaught Exception","time":1740164120001,"code":500,"stackTrace":"Error: Test Uncaught Exception\n    at Timeout._onTimeout (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\index.js:35:9)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)"}
+{"message":"Test Unhandled Rejection","time":1740164141709,"code":500,"stackTrace":"Error: Test Unhandled Rejection\n    at Timeout._onTimeout (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\index.js:35:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)"}
+{"message":"Test ServerError","time":1740164189942,"code":500,"stackTrace":{}}
+{"message":"Test error logging","time":1740164272748,"code":500,"stackTrace":{}}
+{"message":"Test error logging","time":1740164281736,"code":500,"stackTrace":{}}
+{"message":"Test error logging","time":1740164297701,"code":500,"stackTrace":{}}
