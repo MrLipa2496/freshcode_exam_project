@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: true,
       },
       status: {
-        type: DataTypes.ENUM('pending', 'confirmed', 'rejected'),
+        type: DataTypes.STRING,
         allowNull: true,
         defaultValue: 'pending',
       },
@@ -40,13 +40,10 @@ module.exports = (sequelize, DataTypes) => {
   );
 
   Offer.associate = function (models) {
-    Offer.belongsTo(models.User, { foreignKey: 'user_id', sourceKey: 'id' });
-  };
-
-  Offer.associate = function (models) {
+    Offer.belongsTo(models.Users, { foreignKey: 'userId', targetKey: 'id' });
     Offer.belongsTo(models.Contest, {
-      foreignKey: 'contest_id',
-      sourceKey: 'id',
+      foreignKey: 'contestId',
+      targetKey: 'id',
     });
   };
 
