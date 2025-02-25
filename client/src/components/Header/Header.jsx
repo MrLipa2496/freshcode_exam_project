@@ -187,17 +187,27 @@ class Header extends React.Component {
                     </ul>
                   </li>
                 ))}
+                {this.props.data &&
+                  this.props.data.role === CONSTANTS.MODERATOR && (
+                    <div className={styles.offersWrapper}>
+                      <Link className={styles.offers} to='/offers'>
+                        OFFERS
+                      </Link>
+                    </div>
+                  )}
               </ul>
             </div>
 
-            {this.props.data && this.props.data.role !== CONSTANTS.CREATOR && (
-              <div
-                className={styles.startContestBtn}
-                onClick={this.startContests}
-              >
-                START CONTEST
-              </div>
-            )}
+            {this.props.data &&
+              this.props.data.role !== CONSTANTS.CREATOR &&
+              this.props.data.role !== CONSTANTS.MODERATOR && (
+                <div
+                  className={styles.startContestBtn}
+                  onClick={this.startContests}
+                >
+                  START CONTEST
+                </div>
+              )}
           </div>
         </div>
       </div>

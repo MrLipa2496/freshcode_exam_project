@@ -107,7 +107,21 @@ const OfferBox = props => {
   };
 
   const { data, role, id, contestType } = props;
-  const { avatar, firstName, lastName, email, rating } = props.data.User;
+  const { avatar, firstName, lastName, email, rating, approved_by_moderator } =
+    props.data.User;
+
+  const { status } = props.data;
+
+  const isOfferApprovedByModerator = status === 'approved_by_moderator';
+
+  if (
+    role !== CONSTANTS.CREATOR &&
+    !isOfferApprovedByModerator &&
+    status !== CONSTANTS.OFFER_STATUS_WON
+  ) {
+    return null;
+  }
+
   return (
     <div className={styles.offerContainer}>
       {offerStatus()}
@@ -200,16 +214,18 @@ const OfferBox = props => {
           <i onClick={goChat} className='fas fa-comments' />
         )}
       </div>
-      {props.needButtons(data.status) && (
-        <div className={styles.btnsContainer}>
-          <div onClick={resolveOffer} className={styles.resolveBtn}>
-            Resolve
+      {props.needButtons(data.status) &&
+        status !== CONSTANTS.OFFER_STATUS_WON &&
+        role !== CONSTANTS.CREATOR && (
+          <div className={styles.btnsContainer}>
+            <div onClick={resolveOffer} className={styles.resolveBtn}>
+              Resolve
+            </div>
+            <div onClick={rejectOffer} className={styles.rejectBtn}>
+              Reject
+            </div>
           </div>
-          <div onClick={rejectOffer} className={styles.rejectBtn}>
-            Reject
-          </div>
-        </div>
-      )}
+        )}
     </div>
   );
 };

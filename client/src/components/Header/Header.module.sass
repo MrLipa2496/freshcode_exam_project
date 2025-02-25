@@ -30,7 +30,8 @@ $btn-color: #28d2d0
       @media (max-width: 920px)
         display: none
 
-    .startContestBtn
+    .startContestBtn,
+    .offers
       cursor: pointer
       text-align: center
       max-width: 340px
@@ -250,7 +251,7 @@ $btn-color: #28d2d0
           font-size: 12px
 
   .fixedHeader
-    z-index: 500
+    z-index: 1000
     display: flex
     justify-content: center
     align-items: center
@@ -313,3 +314,11 @@ $btn-color: #28d2d0
 
 .displayName, .events
   position: relative
+
+.offersWrapper
+  display: flex
+  align-self: start
+
+.offers
+  text-decoration: none
+  align-self: center
