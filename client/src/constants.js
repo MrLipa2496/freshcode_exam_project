@@ -5,6 +5,7 @@ const serverPort = 3001;
 export default {
   CUSTOMER: 'customer',
   CREATOR: 'creator',
+  MODERATOR: 'moderator',
   CONTEST_STATUS_ACTIVE: 'active',
   CONTEST_STATUS_FINISHED: 'finished',
   CONTEST_STATUS_PENDING: 'pending',
@@ -14,6 +15,7 @@ export default {
   OFFER_STATUS_REJECTED: 'rejected',
   OFFER_STATUS_WON: 'won',
   OFFER_STATUS_PENDING: 'pending',
+  OFFER_STATUS_APPROVED_BY_MODERATOR: 'approved_by_moderator',
   EVENTS_STORAGE_KEY: 'events',
   VIEWED_NOTIFICATIONS_KEY: 'viewed_notifications',
   STATIC_IMAGES_PATH: STATIC_IMAGES_PATH,
