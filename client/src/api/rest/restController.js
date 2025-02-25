@@ -61,3 +61,11 @@ export const getContestById = data =>
       contestId: data.contestId,
     },
   });
+
+export const getPendingOffers = ({ page, pageSize }) =>
+  http.get('/getPendingOffers', {
+    params: { page: parseInt(page, 10), pageSize: parseInt(pageSize, 10) },
+  });
+
+export const updateOfferStatus = (id, data) =>
+  http.put(`/updateOfferStatus/${id}`, data);
