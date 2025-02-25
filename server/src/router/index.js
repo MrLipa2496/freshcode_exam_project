@@ -3,6 +3,7 @@ const basicMiddlewares = require('../middlewares/basicMiddlewares');
 const hashPass = require('../middlewares/hashPassMiddle');
 const userController = require('../controllers/userController');
 const contestController = require('../controllers/contestController');
+const offerController = require('../controllers/offerController');
 const checkToken = require('../middlewares/checkToken');
 const validators = require('../middlewares/validators');
 const chatController = require('../controllers/chatController');
@@ -55,6 +56,20 @@ router.post(
 );
 
 router.post('/getUser', checkToken.checkAuth);
+
+router.get(
+  '/getPendingOffers',
+  checkToken.checkToken,
+  checkToken.checkModerator,
+  offerController.getPendingOffers
+);
+
+router.put(
+  '/updateOfferStatus/:id',
+  checkToken.checkToken,
+  checkToken.checkModerator,
+  offerController.updateOfferStatus
+);
 
 router.get(
   '/downloadFile/:fileName',
