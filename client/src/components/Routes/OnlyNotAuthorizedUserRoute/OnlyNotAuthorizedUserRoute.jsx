@@ -11,13 +11,21 @@ const OnlyNotAuthorizedUserRoute = () => {
 
   useEffect(() => {
     dispatch(getUser(navigate));
-  }, []);
+  }, [dispatch, navigate]);
+
+  useEffect(() => {
+    if (!isFetching) {
+      if (data) {
+        navigate('/');
+      }
+    }
+  }, [data, isFetching, navigate]);
 
   if (isFetching) {
     return <Spinner />;
   }
 
-  return data ? navigate('/') : <Outlet />;
+  return <Outlet />;
 };
 
 export default OnlyNotAuthorizedUserRoute;

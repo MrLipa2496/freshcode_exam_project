@@ -25,7 +25,8 @@ const Home = props => {
     };
   });
 
-  const { isFetching } = props;
+  const { isFetching, userRole } = props;
+
   const text =
     CONSTANTS.HEADER_ANIMATION_TEXT[
       index % CONSTANTS.HEADER_ANIMATION_TEXT.length
@@ -48,11 +49,13 @@ const Home = props => {
                 explore our hand-picked collection of premium names available
                 for immediate purchase
               </p>
-              <div className={styles.button}>
-                <Link className={styles.button__link} to='/dashboard'>
-                  DASHBOARD
-                </Link>
-              </div>
+              {userRole !== CONSTANTS.MODERATOR && (
+                <div className={styles.button}>
+                  <Link className={styles.button__link} to='/dashboard'>
+                    DASHBOARD
+                  </Link>
+                </div>
+              )}
             </div>
             <div className={styles.greyContainer}>
               <SlideBar
@@ -264,8 +267,8 @@ const Home = props => {
 };
 
 const mapStateToProps = state => {
-  const { isFetching } = state.userStore;
-  return { isFetching };
+  const { isFetching, userRole } = state.userStore;
+  return { isFetching, userRole };
 };
 
 export default connect(mapStateToProps, null)(Home);

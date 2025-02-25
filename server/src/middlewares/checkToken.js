@@ -38,3 +38,23 @@ module.exports.checkToken = async (req, res, next) => {
     next(new TokenError());
   }
 };
+
+module.exports.checkModerator = async (req, res, next) => {
+  try {
+    const foundUser = await userQueries.findUser({ id: req.tokenData.userId });
+
+    if (!foundUser) {
+      return next(new TokenError('User not found'));
+    }
+
+    if (foundUser.role !== 'moderator') {
+      return res
+        .status(403)
+        .json({ error: 'Access denied. Moderator role required.' });
+    }
+
+    next();
+  } catch (err) {
+    next(new TokenError());
+  }
+};
