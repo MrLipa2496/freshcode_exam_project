@@ -124,13 +124,20 @@ export const changeChatFavorite = decorateAsyncThunk({
 const changeChatFavoriteExtraReducers = createExtraReducers({
   thunk: changeChatFavorite,
   fulfilledReducer: (state, { payload }) => {
-    const { messagesPreview } = state;
-    messagesPreview.forEach(preview => {
-      if (isEqual(preview.participants, payload.participants))
-        preview.favoriteList = payload.favoriteList;
+    state.messagesPreview = state.messagesPreview.map(preview => {
+      if (preview._id === payload._id) {
+        return {
+          ...preview,
+          favoriteList: [...payload.favoriteList],
+        };
+      }
+      return { ...preview }; // <- важливо! Створюємо нову референцію
     });
-    state.chatData = payload;
-    state.messagesPreview = messagesPreview;
+
+    state.chatData = {
+      ...payload,
+      favoriteList: [...payload.favoriteList],
+    };
   },
   rejectedReducer: (state, { payload }) => {
     state.error = payload;
@@ -149,13 +156,20 @@ export const changeChatBlock = decorateAsyncThunk({
 const changeChatBlockExtraReducers = createExtraReducers({
   thunk: changeChatBlock,
   fulfilledReducer: (state, { payload }) => {
-    const { messagesPreview } = state;
-    messagesPreview.forEach(preview => {
-      if (isEqual(preview.participants, payload.participants))
-        preview.blackList = payload.blackList;
+    state.messagesPreview = state.messagesPreview.map(preview => {
+      if (preview._id === payload._id) {
+        return {
+          ...preview,
+          blackList: [...payload.blackList],
+        };
+      }
+      return { ...preview }; // <- навіть якщо нічого не змінюємо, робимо shallow copy
     });
-    state.chatData = payload;
-    state.messagesPreview = messagesPreview;
+
+    state.chatData = {
+      ...payload,
+      blackList: [...payload.blackList],
+    };
   },
   rejectedReducer: (state, { payload }) => {
     state.error = payload;
@@ -311,13 +325,23 @@ const changeCatalogNameExtraReducers = createExtraReducers({
 
 const reducers = {
   changeBlockStatusInStore: (state, { payload }) => {
-    const { messagesPreview } = state;
-    messagesPreview.forEach(preview => {
-      if (isEqual(preview.participants, payload.participants))
-        preview.blackList = payload.blackList;
+    const chatData = payload.chatData || payload;
+
+    state.chatData = {
+      ...state.chatData,
+      ...chatData,
+    };
+
+    state.messagesPreview = state.messagesPreview.map(preview => {
+      if (isEqual(preview.participants, chatData.participants)) {
+        return {
+          ...preview,
+          blackList: chatData.blackList,
+          favoriteList: chatData.favoriteList,
+        };
+      }
+      return preview;
     });
-    state.chatData = payload;
-    state.messagesPreview = messagesPreview;
   },
 
   addMessage: (state, { payload }) => {
