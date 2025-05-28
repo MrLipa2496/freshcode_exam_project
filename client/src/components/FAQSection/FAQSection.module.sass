@@ -1,0 +1,150 @@
+$blue-color: #377dff
+
+.faqContainer
+  max-width: 800px
+  margin: auto
+
+.faqTabs
+  display: flex
+  justify-content: center
+  margin-bottom: 20px
+
+.faqTabButton
+  padding: 20px 20px
+  margin: 5px
+  margin-top: 40px
+  border: none
+  border-radius: 20px
+  background: #eee
+  cursor: pointer
+  transition: 0.3s
+  font-size: 14px
+
+  @media (max-width: 580px)
+    padding: 10px 10px
+    font-size: 13px
+
+.faqTabButtonActive
+  background: #ff7043
+  color: white
+  font-weight: bold
+
+.faqSection
+  margin-bottom: 30px
+
+.faqTitle
+  font-size: 28px
+  font-weight: 600
+  margin: 50px 0
+  color: $blue-color
+
+.faqItem
+  margin: 10px 0
+  border: 1px solid #e6e6e6
+  border-radius: 20px
+  transition: 0.3s
+
+.faqItemActive
+  background: $blue-color
+  color: white
+
+.faqQuestion
+  width: 100%
+  padding: 30px 20px
+  font-size: 18px
+  font-weight: 600
+  color: #19184A
+  border: 1px solid transparent
+  border-radius: 20px
+  text-align: left
+  background-color: #ffffff
+  cursor: pointer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  transition: 0.2s linear
+
+  &:hover
+    border: 1px solid $blue-color
+    background-color: rgba(151, 153, 248, 0.248)
+
+.faqQuestionActive
+  color: white
+  background-color: transparent
+
+.faqQuestionIcon
+  font-size: 24px
+  margin-left: 10px
+  color: $blue-color
+
+.faqIconActive
+  color: white
+
+.faqAnswer
+  padding: 20px
+  font-size: 16px
+  border-radius: 20px
+  line-height: 1.5
+
+.inputWrapper
+  position: relative
+  display: flex
+  justify-content: center
+  margin: 0 auto
+  margin-top: 80px
+  background: linear-gradient(45deg,rgb(142 97 255 / .5333333333) 0,#339bf7 50%,rgb(43 198 215 / .431372549) 100%)
+  padding: 2px
+  border-radius: 50px
+  max-width: 650px
+
+.faqInput
+  font-size: 18px
+  border: none
+  padding: 20px
+  width: 100% 
+  border-radius: 50px
+
+  @media (max-width: 580px)
+    font-size: 14px
+
+.searchIconWrapper
+  position: absolute
+  right: 6px
+  top: 50%
+  transform: translateY(-50%) 
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #ff6955
+  border-radius: 40px
+  width: 68px
+  height: 54px
+  cursor: pointer
+  transition: .3s linear
+
+  &:hover
+    background-color: #ff6955a3
+
+.searchIcon
+  font-size: 25px
+  color: #ffffff
+
+.tagsContainer
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-top: 20px
+  gap: 10px
+
+.tag
+  background: rgb(43, 42, 170, .1)
+  color: #2b2aaa
+  box-shadow: 0 1px 6px rgb(17, 17, 17, .06)
+  padding: 8px 16px
+  border-radius: 20px
+  font-size: 14px
+  cursor: pointer
+  transition: 0.4s
+
+  &:hover
+    background: #ffffff

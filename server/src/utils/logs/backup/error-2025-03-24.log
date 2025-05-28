@@ -1,0 +1,662 @@
+[
+  {
+    "message": "token error",
+    "time": "2025-03-05T18:58:15.146Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-05T18:58:15.160Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "Error fetching conversation: таблица \"participants\" отсутствует в предложении FROM",
+    "time": "2025-03-05T18:58:31.844Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching conversation: таблица \"participants\" отсутствует в предложении FROM\n    at module.exports.getConversationByParticipants (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:248:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.favoriteChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:293:18)"
+  },
+  {
+    "message": "Error fetching conversation: таблица \"participants\" отсутствует в предложении FROM",
+    "time": "2025-03-05T18:58:34.125Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching conversation: таблица \"participants\" отсутствует в предложении FROM\n    at module.exports.getConversationByParticipants (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:248:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.favoriteChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:293:18)"
+  },
+  {
+    "message": "Error fetching conversation: таблица \"participants\" отсутствует в предложении FROM",
+    "time": "2025-03-05T19:00:18.301Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching conversation: таблица \"participants\" отсутствует в предложении FROM\n    at module.exports.getConversationByParticipants (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:248:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.favoriteChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:293:18)"
+  },
+  {
+    "message": "Error fetching conversation: таблица \"participants\" отсутствует в предложении FROM",
+    "time": "2025-03-05T19:02:30.496Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching conversation: таблица \"participants\" отсутствует в предложении FROM\n    at module.exports.getConversationByParticipants (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:248:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.favoriteChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:290:18)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-05T20:26:49.977Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-05T20:26:50.011Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-05T20:27:05.486Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-05T20:27:05.497Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T20:06:15.466Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T20:06:15.482Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T20:06:15.489Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T20:06:20.233Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T20:06:20.238Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T20:06:20.247Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "Error creating conversation",
+    "time": "2025-03-07T20:08:45.207Z",
+    "code": 500,
+    "stackTrace": "Error: Error creating conversation\n    at module.exports.createConversation (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:96:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.getChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:129:22)"
+  },
+  {
+    "message": "Error creating conversation",
+    "time": "2025-03-07T20:33:27.377Z",
+    "code": 500,
+    "stackTrace": "Error: Error creating conversation\n    at module.exports.createConversation (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:96:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.getChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:129:22)"
+  },
+  {
+    "message": "Error creating conversation",
+    "time": "2025-03-07T20:41:20.626Z",
+    "code": 500,
+    "stackTrace": "Error: Error creating conversation\n    at module.exports.createConversation (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:96:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.getChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:129:22)"
+  },
+  {
+    "message": "Error creating conversation",
+    "time": "2025-03-07T20:41:25.773Z",
+    "code": 500,
+    "stackTrace": "Error: Error creating conversation\n    at module.exports.createConversation (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:96:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.getChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:129:22)"
+  },
+  {
+    "message": "Error creating conversation",
+    "time": "2025-03-07T20:42:24.408Z",
+    "code": 500,
+    "stackTrace": "Error: Error creating conversation\n    at module.exports.createConversation (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:96:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.getChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:129:22)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:02.714Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:02.743Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:02.749Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:02.757Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:05.382Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:06.746Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:06.752Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "this email were already exist",
+    "time": "2025-03-07T21:04:28.999Z",
+    "code": 409,
+    "stackTrace": "NotUniqueEmail: this email were already exist\n    at module.exports.registration (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\userController.js:61:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:39.764Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:39.772Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:39.778Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:04:39.786Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:05:01.463Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:172:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:05:46.680Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:172:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:07:13.109Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkToken (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:38:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:07:13.114Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkToken (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:38:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:07:13.282Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:07:13.347Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:07:13.353Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:07:13.360Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:07:21.452Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-07T21:07:21.475Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "Error updating favorite status",
+    "time": "2025-03-07T21:09:10.371Z",
+    "code": 500,
+    "stackTrace": "No stack trace"
+  },
+  {
+    "message": "Error updating favorite status",
+    "time": "2025-03-07T21:09:10.372Z",
+    "code": 500,
+    "stackTrace": "ServerError: Error updating favorite status\n    at module.exports.updateFavoriteStatus (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:317:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.favoriteChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:309:25)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:09:11.479Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:172:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:09:12.062Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:172:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:09:12.310Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:172:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Error updating favorite status",
+    "time": "2025-03-07T21:09:12.962Z",
+    "code": 500,
+    "stackTrace": "No stack trace"
+  },
+  {
+    "message": "Error updating favorite status",
+    "time": "2025-03-07T21:09:12.963Z",
+    "code": 500,
+    "stackTrace": "ServerError: Error updating favorite status\n    at module.exports.updateFavoriteStatus (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:317:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.favoriteChat (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:309:25)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:12:35.311Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:172:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "в элементе предложения FROM неверная ссылка на таблицу \"ConversationParticipants\"",
+    "time": "2025-03-07T21:16:32.108Z",
+    "code": 500,
+    "stackTrace": "Error\n    at Query.run (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\sequelize\\lib\\dialects\\postgres\\query.js:50:25)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryInterface.select (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Conversations.findAll (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async module.exports.getConversationsByParticipants (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:7:10)\n    at async module.exports.addMessage (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:27:27)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:17:45.241Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:170:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:17:45.522Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:170:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:17:46.300Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:170:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:17:46.521Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:170:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:17:46.755Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:170:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Error fetching preview: неверный синтаксис для типа integer: \"[object Object]\"",
+    "time": "2025-03-07T21:19:26.970Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching preview: неверный синтаксис для типа integer: \"[object Object]\"\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:228:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Error fetching preview: bd is not defined",
+    "time": "2025-03-07T21:20:27.652Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching preview: bd is not defined\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:229:11)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at module.exports.checkToken (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:36:5)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"
+  },
+  {
+    "message": "Error fetching preview: bd is not defined",
+    "time": "2025-03-07T21:20:31.013Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching preview: bd is not defined\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:229:11)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at module.exports.checkToken (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:36:5)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"
+  },
+  {
+    "message": "в элементе предложения FROM неверная ссылка на таблицу \"ConversationParticipants\"",
+    "time": "2025-03-07T21:20:35.475Z",
+    "code": 500,
+    "stackTrace": "Error\n    at Query.run (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\sequelize\\lib\\dialects\\postgres\\query.js:50:25)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryInterface.select (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Conversations.findAll (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async module.exports.getConversationsByParticipants (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:7:10)\n    at async module.exports.addMessage (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:27:27)"
+  },
+  {
+    "message": "Error fetching preview: bd is not defined",
+    "time": "2025-03-07T21:20:45.150Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching preview: bd is not defined\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:229:11)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at module.exports.checkToken (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:36:5)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)"
+  },
+  {
+    "message": "Error fetching preview: неверный синтаксис для типа integer: \"[object Object]\"",
+    "time": "2025-03-07T21:22:02.253Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching preview: неверный синтаксис для типа integer: \"[object Object]\"\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:229:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "Cannot read properties of null (reading 'participants')",
+    "time": "2025-03-07T21:22:20.156Z",
+    "code": 500,
+    "stackTrace": "TypeError: Cannot read properties of null (reading 'participants')\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:171:53\n    at Array.forEach (<anonymous>)\n    at module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:170:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T09:58:50.006Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T09:58:50.021Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T09:58:51.900Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "Error fetching user chats: столбец Conversations.createdAt не существует",
+    "time": "2025-03-08T10:03:10.706Z",
+    "code": 500,
+    "stackTrace": "Error: Error fetching user chats: столбец Conversations.createdAt не существует\n    at module.exports.getUserChats (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\queries\\chatQueries.js:220:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.getPreview (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\controllers\\chatController.js:212:23)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:05:37.810Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:05:37.820Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:05:37.826Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:06:16.553Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:06:16.560Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:06:18.482Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:06:18.494Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:06:21.037Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:06:21.053Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:07:36.904Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:07:36.919Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:07:36.925Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:07:36.931Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:07:40.137Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:07:40.141Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:07:40.144Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:08:59.128Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:08:59.137Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:08:59.144Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:09:01.447Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:09:01.455Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:09:04.139Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T10:09:04.145Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:14:00.507Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:14:00.527Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:14:00.538Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:14:00.646Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:14:00.650Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:14:00.655Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:22:01.319Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:22:01.332Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:22:01.726Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:22:01.734Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:34:44.809Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:34:44.827Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:34:44.841Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:34:44.966Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:34:44.970Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:34:44.975Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:34:44.981Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:49:37.226Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  },
+  {
+    "message": "token error",
+    "time": "2025-03-08T11:49:37.244Z",
+    "code": 408,
+    "stackTrace": "TokenError: token error\n    at module.exports.checkAuth (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\src\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\MrLipa\\Desktop\\exam-freshcode\\server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+  }
+]

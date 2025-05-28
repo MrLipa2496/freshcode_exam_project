@@ -1,12 +1,10 @@
 import * as yup from 'yup';
 import valid from 'card-validator';
+import { parseISO, isBefore, startOfDay, set } from 'date-fns';
 
 export default {
   LoginSchem: yup.object().shape({
-    email: yup
-      .string()
-      .email('check email')
-      .required('required'),
+    email: yup.string().email('check email').required('required'),
     password: yup
       .string()
       .test(
@@ -17,10 +15,7 @@ export default {
       .required('required'),
   }),
   RegistrationSchem: yup.object().shape({
-    email: yup
-      .string()
-      .email('check email')
-      .required('Email is required'),
+    email: yup.string().email('check email').required('Email is required'),
     password: yup
       .string()
       .test(
@@ -149,10 +144,7 @@ export default {
       .required('required'),
   }),
   CashoutSchema: yup.object().shape({
-    sum: yup
-      .number()
-      .min(5, 'min sum is 5$')
-      .required('required'),
+    sum: yup.number().min(5, 'min sum is 5$').required('required'),
     number: yup
       .string()
       .test(
@@ -161,10 +153,7 @@ export default {
         value => valid.number(value).isValid
       )
       .required('required'),
-    name: yup
-      .string()
-      .min(1)
-      .required('required'),
+    name: yup.string().min(1).required('required'),
     cvc: yup
       .string()
       .test('test-cvc', 'cvc is invalid', value => valid.cvv(value).isValid)
@@ -206,14 +195,7 @@ export default {
     file: yup.mixed(),
   }),
   MessageSchema: yup.object({
-    message: yup
-      .string()
-      .test(
-        'test-message',
-        'required',
-        value => value && value.trim().length >= 1
-      )
-      .required('required'),
+    message: yup.string(),
   }),
   CatalogSchema: yup.object({
     catalogName: yup
@@ -224,5 +206,52 @@ export default {
         value => value && value.trim().length >= 1
       )
       .required('required'),
+  }),
+  EventsSchema: yup.object({
+    eventName: yup.string().required('Event name is required'),
+    eventDate: yup
+      .date()
+      .required('Event date is required')
+      .min(startOfDay(new Date()), 'Date cannot be in the past'),
+    eventTime: yup
+      .string()
+      .required('Event time is required')
+      .test('is-future-time', 'Time must be in the future', function (value) {
+        if (!value) return true;
+
+        const { eventDate } = this.parent;
+        if (!eventDate) return false;
+
+        const parsedEventDate =
+          typeof eventDate === 'string' ? parseISO(eventDate) : eventDate;
+
+        if (isNaN(parsedEventDate)) {
+          return false;
+        }
+
+        const [hours, minutes] = value.split(':').map(Number);
+
+        const eventDateTime = set(parsedEventDate, {
+          hours,
+          minutes,
+          seconds: 0,
+          milliseconds: 0,
+        });
+
+        const now = new Date();
+        const roundedNow = set(now, {
+          hours: now.getHours(),
+          minutes: now.getMinutes(),
+          seconds: 0,
+          milliseconds: 0,
+        });
+
+        return !isBefore(eventDateTime, roundedNow);
+      }),
+    notificationTime: yup
+      .number()
+      .required('Notification time is required')
+      .min(1, 'Must be at least 1 minute')
+      .max(1440, 'Cannot exceed 1440 minutes (24 hours)'),
   }),
 };

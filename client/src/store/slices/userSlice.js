@@ -10,6 +10,7 @@ const initialState = {
   isFetching: true,
   error: null,
   data: null,
+  userRole: null,
 };
 
 export const getUser = createAsyncThunk(
@@ -21,7 +22,7 @@ export const getUser = createAsyncThunk(
       if (navigate) {
         navigate('/', { replace: true });
       }
-      return data;
+      return { userData: data, userRole: data.role }; // assuming the role is in the response
     } catch (err) {
       return rejectWithValue({
         data: err?.response?.data ?? 'Gateway Timeout',
@@ -65,7 +66,8 @@ const extraReducers = builder => {
   });
   builder.addCase(getUser.fulfilled, (state, { payload }) => {
     state.isFetching = false;
-    state.data = payload;
+    state.data = payload.userData;
+    state.userRole = payload.userRole;
   });
   builder.addCase(getUser.rejected, rejectedReducer);
 
