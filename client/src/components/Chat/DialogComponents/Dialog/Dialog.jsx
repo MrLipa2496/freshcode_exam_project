@@ -38,21 +38,29 @@ class Dialog extends React.Component {
   renderMainDialog = () => {
     const messagesArray = [];
     const { messages, userId } = this.props;
+
     let currentTime = moment();
+
+    if (!messages || messages.length === 0) return <div>Немає повідомлень</div>;
+
     messages.forEach((message, i) => {
       if (!currentTime.isSame(message.createdAt, 'date')) {
         messagesArray.push(
-          <div key={message.createdAt} className={styles.date}>
+          <div key={`date-${message.createdAt}`} className={styles.date}>
             {moment(message.createdAt).format('MMMM DD, YYYY')}
           </div>
         );
         currentTime = moment(message.createdAt);
       }
+
+      const senderId = message.sender_id;
+      const isMyMessage = userId === senderId;
+
       messagesArray.push(
         <div
-          key={i}
+          key={message.id || i}
           className={className(
-            userId === message.sender ? styles.ownMessage : styles.message
+            isMyMessage ? styles.ownMessage : styles.message
           )}
         >
           <span>{message.body}</span>
