@@ -12,7 +12,7 @@ module.exports = {
           displayName: 'mod123',
           password: hashedPassword,
           email: 'moderator@gmail.com',
-          avatar: 'avatar.png',
+          avatar: 'anon.png',
           role: 'moderator',
           balance: 0,
           accessToken: null,
