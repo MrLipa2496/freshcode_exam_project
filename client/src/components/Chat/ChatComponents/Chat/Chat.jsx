@@ -92,12 +92,8 @@ class Chat extends React.Component {
   };
 
   render () {
-    const {
-      isExpanded,
-      isShow,
-      isShowCatalogCreation,
-      error,
-    } = this.props.chatStore;
+    const { isExpanded, isShow, isShowCatalogCreation, error } =
+      this.props.chatStore;
     const { id } = this.props.userStore.data;
     const { changeShow, getPreviewChat } = this.props;
     return (

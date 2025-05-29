@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import UpdateUserInfoForm from '../UpdateUserInfoForm/UpdateUserInfoForm';
 import { updateUser } from '../../store/slices/userSlice';
@@ -17,15 +16,8 @@ const UserInfo = props => {
   };
 
   const { isEdit, changeEditMode, data } = props;
-  const {
-    avatar,
-    firstName,
-    lastName,
-    displayName,
-    email,
-    role,
-    balance,
-  } = data;
+  const { avatar, firstName, lastName, displayName, email, role, balance } =
+    data;
   return (
     <div className={styles.mainContainer}>
       {isEdit ? (
