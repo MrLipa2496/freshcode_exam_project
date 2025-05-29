@@ -1,24 +1,94 @@
 # Fullstack Project Tasks Documentation
 
-## Environment Variables
+## How to Run the Project
 
-Make sure to create a `.env` file in the root directory with the following environment variables:
+### Backend (Server)
 
-```env
-PORT=3001
-HOST="localhost"
+1. Navigate to the `server` directory:
 
-NODE_ENV="development"
+   ```bash
+   cd server
+   ```
 
-DB_HOST="localhost"
-DB_PORT=5000
-DB_USER="postgres"
-DB_PASSWORD="98505"
-DB_NAME="todo-dev"
+2. Install the dependencies:
 
-MAILING_EMAIL="sasalipa216@gmail.com"
-MAILING_PASS="ggac hxia krsr rgno"
-```
+   ```bash
+   npm install
+   ```
+
+3. Make sure to create a `.env` file in the root directory with the following environment variables:
+
+   ```env
+   PORT="<your_server_port>"
+   HOST="localhost"
+
+   NODE_ENV="development"
+
+   DB_HOST="localhost"
+   DB_PORT=5432
+   DB_USER="postgres"
+   DB_PASSWORD="<your_db_password>"
+   DB_NAME="<your_db_name>"
+
+   MAILING_EMAIL="<your_email>"
+   MAILING_PASS="<your_email_pass>"
+   ```
+
+4. Start the server in development mode:
+   ```bash
+   npm start
+   ```
+
+---
+
+> Server uses nodemon for auto-restarting on file changes.
+
+### Frontend (Client)
+
+1. Navigate to the `client` directory:
+
+   ```bash
+   cd client
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the client in development mode:
+   ```bash
+   npm start
+   ```
+
+# Useful Scripts
+
+## Server (backend)
+
+> The server runs using **nodemon**, and the tests run using **Jest**.
+
+### Main commands:
+
+- `npm start` — start the server with `nodemon`
+- `npm test` — run unit tests (Jest)
+
+---
+
+## Client (frontend)
+
+> The client part has integration with **Storybook** for viewing UI components.
+
+### Main commands:
+
+- `npm run start` — start the dev server for the frontend
+- `npm run build` — build the production version of the frontend
+- `npm run preview` — local preview of the built frontend
+
+### Storybook:
+
+- `npm run storybook` — start Storybook to preview UI components
+- `npm run build-storybook` — build Storybook static files
 
 ---
 
