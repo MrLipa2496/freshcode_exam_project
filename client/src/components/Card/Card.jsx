@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import styles from './Card.module.sass';

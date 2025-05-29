@@ -1,4 +1,4 @@
-const { Op, Sequelize } = require('sequelize');
+const { Sequelize } = require('sequelize');
 const bd = require('../../models');
 const NotFound = require('../../errors/OfferNotFoundError');
 const ServerError = require('../../errors/ServerError');

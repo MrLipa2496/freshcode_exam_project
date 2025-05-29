@@ -23,10 +23,8 @@ class CatalogCreation extends React.Component {
       changeShowAddChatToCatalogMenu,
       isFetching,
     } = this.props;
-    const {
-      ADD_CHAT_TO_OLD_CATALOG,
-      CREATE_NEW_CATALOG_AND_ADD_CHAT,
-    } = CONSTANTS;
+    const { ADD_CHAT_TO_OLD_CATALOG, CREATE_NEW_CATALOG_AND_ADD_CHAT } =
+      CONSTANTS;
     return (
       <>
         {!isFetching && (

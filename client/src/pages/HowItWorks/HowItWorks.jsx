@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './HowItWorks.module.sass';
 import CONSTANTS from './../../constants';
 import Card from '../../components/Card/Card';
