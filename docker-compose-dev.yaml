@@ -1,4 +1,5 @@
-# version: '3'
+version: '3.8'
+
 services:
   front-react:
     build:
@@ -11,15 +12,24 @@ services:
       - ./client:/client
       - /client/node_modules
     ports:
-      - '5000:3000'
+      - '3000:3000'    
 
   server-dev:
     build:
       context: ./server
     environment:
-      NODE_ENV: development
+      NODE_ENV: 'development'
+      PORT: 3001
+      HOST: '0.0.0.0'
+      DB_HOST: 'db-dev'
+      DB_PORT: 5432
+      DB_USER: 'postgres'
+      DB_PASSWORD: 98505
+      DB_NAME: 'todo-dev'
+      MAILING_EMAIL: 'sasalipa216@gmail.com'
+      MAILING_PASS: 'ggac hxia krsr rgno'
     ports:
-      - '3001:3001' 
+      - '3001:3001'
     depends_on:
       - db-dev
       - mongo-dev
@@ -36,11 +46,11 @@ services:
   db-dev:
     image: postgres:15.5-bullseye
     environment:
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=todo-dev
-    ports:
-      - '12346:5432'
+      POSTGRES_PASSWORD: 98505
+      POSTGRES_USER: postgres
+      POSTGRES_DB: todo-dev
+    # ports:
+    #   - '5000:5432'  
 
 volumes:
   server-dev:

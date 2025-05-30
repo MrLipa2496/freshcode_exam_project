@@ -1,15 +1,16 @@
-version: '3'
+version: '3.8'
+
 services:
   client-prod:
     build:
       context: ./client
       dockerfile: Dockerfile-production
     ports:
-      - '80:80'
+      - '80:80'    
     depends_on:
       - server-prod
-    volumes_from:
-      - server-prod:ro
+    volumes:
+      - ./client/build:/usr/share/nginx/html:ro
 
   server-prod:
     build:
@@ -17,6 +18,15 @@ services:
       dockerfile: Dockerfile-production
     environment:
       NODE_ENV: production
+      PORT: 3001
+      HOST: 0.0.0.0
+      DB_HOST: db-prod
+      DB_PORT: 5000           
+      DB_USER: postgres
+      DB_PASSWORD: 98505
+      DB_NAME: todo-prod
+      MAILING_EMAIL: sasalipa216@gmail.com
+      MAILING_PASS: ggac hxia krsr rgno
     ports:
       - '3001:3001'
     depends_on:
@@ -28,17 +38,17 @@ services:
   db-prod:
     image: postgres:13.2-alpine
     environment:
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=todo-prod
-    ports:
-      - '5432:5432'
+      POSTGRES_PASSWORD: 98505
+      POSTGRES_USER: postgres
+      POSTGRES_DB: todo-prod
+    # ports:
+    #   - '5000:5000'   
 
   mongo-prod:
     image: mongo:4.4.6-bionic
     environment:
-      - MONGO_DATA_DIR=/data/db
-      - MONGO_LOG_DIR=/dev/null
+      MONGO_DATA_DIR: /data/db
+      MONGO_LOG_DIR: /dev/null
     volumes:
       - ./data/db:/data/db
     ports:
