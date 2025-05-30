@@ -1,5 +1,19 @@
 # Fullstack Project Tasks Documentation
 
+## How to Run the Docker
+
+> To start the development environment:
+
+```bash
+./start-dev.sh
+```
+
+This will:
+
+- Build the frontend and backend images (and DB)
+- Launch all services in development mode
+- Mount source code for hot reloading
+
 ## How to Run the Project
 
 ### Backend (Server)
