@@ -5,29 +5,28 @@ const FieldFileInput = ({ classes, ...rest }) => {
 
   return (
     <Field name={rest.name}>
-      {props => {
-        const { field } = props;
+      {({ field, form }) => {
+        const handleChange = event => {
+          const file = event.currentTarget.files[0];
+          form.setFieldValue(field.name, file);
+        };
 
         const getFileName = () => {
-          if (props.field.value) {
-            return props.field.value.name;
-          }
-          return '';
+          return field.value ? field.value.name : '';
         };
 
         return (
           <div className={fileUploadContainer}>
-            <label htmlFor='fileInput' className={labelClass}>
+            <label htmlFor={rest.name} className={labelClass}>
               Choose file
             </label>
-            <span id='fileNameContainer' className={fileNameClass}>
-              {getFileName()}
-            </span>
+            <span className={fileNameClass}>{getFileName()}</span>
             <input
-              {...field}
               className={fileInput}
-              id='fileInput'
+              id={rest.name}
+              name={field.name}
               type='file'
+              onChange={handleChange}
             />
           </div>
         );
