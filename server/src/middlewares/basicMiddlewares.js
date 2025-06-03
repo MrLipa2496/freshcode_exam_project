@@ -4,15 +4,27 @@ const ServerError = require('../errors/ServerError');
 const CONSTANTS = require('../constants');
 
 module.exports.parseBody = (req, res, next) => {
-  req.body.contests = JSON.parse(req.body.contests);
-  for (let i = 0; i < req.body.contests.length; i++) {
-    if (req.body.contests[i].haveFile) {
-      const file = req.files.splice(0, 1);
-      req.body.contests[i].fileName = file[0].filename;
-      req.body.contests[i].originalFileName = file[0].originalname;
+  try {
+    req.body.contests = JSON.parse(req.body.contests);
+    const files = Array.isArray(req.files) ? [...req.files] : [];
+
+    for (let i = 0; i < req.body.contests.length; i++) {
+      if (req.body.contests[i].haveFile) {
+        const file = files.splice(0, 1);
+        if (!file.length) {
+          return next(
+            new ServerError(`Missing uploaded file for contest index ${i}`)
+          );
+        }
+        req.body.contests[i].fileName = file[0].filename;
+        req.body.contests[i].originalFileName = file[0].originalname;
+      }
     }
+
+    next();
+  } catch (err) {
+    next(new ServerError(err));
   }
-  next();
 };
 
 module.exports.canGetContest = async (req, res, next) => {

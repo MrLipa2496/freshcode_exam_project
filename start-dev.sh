@@ -4,9 +4,7 @@
 ## Run application in DEV mode ##
 #################################
 
-
-set -e 
-set -o pipefail
+set -e
 
 started_at=$(date +"%s")
 
