@@ -198,15 +198,33 @@ This will:
 
 ## FULLSTACK
 
-- Added new user role: `Moderator`
-- Moderator capabilities:
-  - Can view all offers
-  - Can approve/reject offers
-  - Cannot see Creative info
-- Customer sees only approved offers
-- Creative sees only their own offers with statuses
-- Moderation decision is emailed to the Creative
-- Implemented:
-  - Moderation page with pagination
-  - Action buttons (Approve / Reject)
-  - UI matches app styling
+### Moderator Role Implementation and Access
+
+- Added new user role: `Moderator`.
+- To create the moderator user, **run the seeder**:
+  ```bash
+  npx sequelize-cli db:seed --seed 20250223140630-create-moderator.js
+  ```
+- This seeder inserts a moderator user into the `Users` table with the following credentials:
+
+  | Field    | Value               |
+  | -------- | ------------------- |
+  | Email    | moderator@gmail.com |
+  | Password | moderator           |
+
+- **Moderator capabilities:**
+  - Can view all offers.
+  - Can approve/reject offers.
+  - Cannot see Creative info.
+- **Customer perspective:**
+  - Customers see only approved offers.
+- **Creative perspective:**
+  - Creatives see only their own offers with statuses.
+- **Notification System:**
+  - Moderation decisions are emailed to the Creative.
+- **Implemented Features:**
+  - Moderation page with pagination.
+  - Action buttons (Approve / Reject).
+  - UI design consistent with the rest of the application styling.
+
+---
