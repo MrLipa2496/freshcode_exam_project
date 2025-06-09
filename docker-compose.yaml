@@ -40,9 +40,7 @@ services:
     environment:
       POSTGRES_PASSWORD: 98505
       POSTGRES_USER: postgres
-      POSTGRES_DB: todo-prod
-    # ports:
-    #   - '5000:5000'   
+      POSTGRES_DB: todo-prod 
 
   mongo-prod:
     image: mongo:4.4.6-bionic

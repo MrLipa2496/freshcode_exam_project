@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-
-#################################
-## Run application in DEV mode ##
-#################################
-
 set -e
 
 PROJECT_NAME="freshcode_exam_project"

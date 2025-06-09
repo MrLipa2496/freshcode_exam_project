@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-
-#################################
-## Run application in PROD mode ##
-#################################
-
 set -e
 set -o pipefail
 

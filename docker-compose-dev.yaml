@@ -47,8 +47,6 @@ services:
       POSTGRES_PASSWORD: 98505
       POSTGRES_USER: postgres
       POSTGRES_DB: todo-dev
-    # ports:
-    #   - '5000:5432'  
 
 volumes:
   server-dev:
