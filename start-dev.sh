@@ -6,14 +6,26 @@
 
 set -e
 
+PROJECT_NAME="freshcode_exam_project"
+COMPOSE_FILE="docker-compose-dev.yaml"
+
 started_at=$(date +"%s")
 
 echo "-----> Provisioning containers"
-docker compose --file docker-compose-dev.yaml up -d
+docker compose -p $PROJECT_NAME --file $COMPOSE_FILE up -d
 echo ""
 
-echo "-----> Waiting for Postgres to be ready..."
-until docker exec exam-freshcode-db-dev-1 pg_isready -U postgres > /dev/null 2>&1; do
+POSTGRES_CONTAINER=$(docker ps --filter "name=${PROJECT_NAME}-db-dev" --format "{{.Names}}" | head -n 1)
+SERVER_CONTAINER=$(docker ps --filter "name=${PROJECT_NAME}-server-dev" --format "{{.Names}}" | head -n 1)
+
+if [[ -z "$POSTGRES_CONTAINER" || -z "$SERVER_CONTAINER" ]]; then
+  echo "Could not find the required containers (${PROJECT_NAME}-db-dev or ${PROJECT_NAME}-server-dev)"
+  docker ps
+  exit 1
+fi
+
+echo "-----> Waiting for Postgres ($POSTGRES_CONTAINER) to be ready..."
+until docker exec "$POSTGRES_CONTAINER" pg_isready -U postgres > /dev/null 2>&1; do
   echo "  ...waiting"
   sleep 1
 done
@@ -23,14 +35,14 @@ echo "-----> Waiting for server to stabilize..."
 sleep 3
 
 echo "-----> Running application migrations"
-if ! docker exec exam-freshcode-server-dev-1 npx sequelize-cli db:migrate; then
+if ! docker exec "$SERVER_CONTAINER" npx sequelize-cli db:migrate; then
   echo "Migration failed"
   exit 1
 fi
 echo ""
 
 echo "-----> Running application seeds"
-if ! docker exec exam-freshcode-server-dev-1 npx sequelize-cli db:seed:all; then
+if ! docker exec "$SERVER_CONTAINER" npx sequelize-cli db:seed:all; then
   echo "Seeding failed"
   exit 1
 fi
