@@ -24,7 +24,7 @@ const OffersPage = () => {
   const fetchOffers = async () => {
     setLoading(true);
     try {
-      const response = await getPendingOffers({ page, pageSize }); // Переконайтесь, що передається правильний формат
+      const response = await getPendingOffers({ page, pageSize });
       setOffers(response.data.offers || []);
       setTotalPages(response.data.totalPages || 1);
     } catch (error) {

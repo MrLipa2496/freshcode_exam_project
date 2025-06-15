@@ -131,7 +131,7 @@ const changeChatFavoriteExtraReducers = createExtraReducers({
           favoriteList: [...payload.favoriteList],
         };
       }
-      return { ...preview }; // <- важливо! Створюємо нову референцію
+      return { ...preview };
     });
 
     state.chatData = {
@@ -163,7 +163,7 @@ const changeChatBlockExtraReducers = createExtraReducers({
           blackList: [...payload.blackList],
         };
       }
-      return { ...preview }; // <- навіть якщо нічого не змінюємо, робимо shallow copy
+      return { ...preview };
     });
 
     state.chatData = {

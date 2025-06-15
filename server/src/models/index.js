@@ -57,7 +57,6 @@ db['Ratings'].belongsTo(db['Offers'], {
   targetKey: 'id',
 });
 
-// --- Users ---
 db['Users'].hasMany(db['Messages'], {
   foreignKey: 'sender_id',
   onDelete: 'CASCADE',
@@ -84,7 +83,6 @@ db['Users'].hasMany(db['ConversationParticipants'], {
   onUpdate: 'CASCADE',
 });
 
-// --- Conversations ---
 db['Conversations'].belongsToMany(db['Users'], {
   through: db['ConversationParticipants'],
   foreignKey: 'conversation_id',
@@ -113,7 +111,6 @@ db['Conversations'].hasMany(db['ConversationParticipants'], {
   onUpdate: 'CASCADE',
 });
 
-// --- Messages ---
 db['Messages'].belongsTo(db['Conversations'], {
   foreignKey: 'conversation_id',
   as: 'conversation',
@@ -126,7 +123,6 @@ db['Messages'].belongsTo(db['Users'], {
   as: 'Sender',
 });
 
-// --- Catalogs ---
 db['Catalogs'].belongsTo(db['Users'], {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
@@ -140,7 +136,6 @@ db['Catalogs'].belongsToMany(db['Conversations'], {
   as: 'Conversations',
 });
 
-// --- CatalogChats ---
 db['CatalogChats'].belongsTo(db['Catalogs'], {
   foreignKey: 'catalog_id',
   as: 'Catalog',
@@ -150,7 +145,6 @@ db['CatalogChats'].belongsTo(db['Conversations'], {
   as: 'RelatedConversation',
 });
 
-// --- ConversationParticipants ---
 db['ConversationParticipants'].belongsTo(db['Conversations'], {
   foreignKey: 'conversation_id',
   as: 'conversation',
