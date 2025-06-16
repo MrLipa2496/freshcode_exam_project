@@ -35,7 +35,7 @@ router.post(
   userController.payment
 );
 
-router.post(
+router.get(
   '/getCustomersContests',
   checkToken.checkToken,
   contestController.getCustomersContests
@@ -48,14 +48,14 @@ router.get(
   contestController.getContestById
 );
 
-router.post(
+router.get(
   '/getAllContests',
   checkToken.checkToken,
   basicMiddlewares.onlyForCreative,
   contestController.getContests
 );
 
-router.post('/getUser', checkToken.checkAuth);
+router.get('/getUser', checkToken.checkAuth);
 
 router.get(
   '/getPendingOffers',
@@ -77,7 +77,7 @@ router.get(
   contestController.downloadFile
 );
 
-router.post(
+router.put(
   '/updateContest',
   checkToken.checkToken,
   upload.updateContestFile,
@@ -92,21 +92,21 @@ router.post(
   contestController.setNewOffer
 );
 
-router.post(
+router.put(
   '/setOfferStatus',
   checkToken.checkToken,
   basicMiddlewares.onlyForCustomerWhoCreateContest,
   contestController.setOfferStatus
 );
 
-router.post(
+router.put(
   '/changeMark',
   checkToken.checkToken,
   basicMiddlewares.onlyForCustomer,
   userController.changeMark
 );
 
-router.post(
+router.put(
   '/updateUser',
   checkToken.checkToken,
   upload.uploadAvatar,
@@ -122,13 +122,13 @@ router.post(
 
 router.post('/newMessage', checkToken.checkToken, chatController.addMessage);
 
-router.post('/getChat', checkToken.checkToken, chatController.getChat);
+router.get('/getChat', checkToken.checkToken, chatController.getChat);
 
-router.post('/getPreview', checkToken.checkToken, chatController.getPreview);
+router.get('/getPreview', checkToken.checkToken, chatController.getPreview);
 
-router.post('/blackList', checkToken.checkToken, chatController.blackList);
+router.put('/blackList', checkToken.checkToken, chatController.blackList);
 
-router.post('/favorite', checkToken.checkToken, chatController.favoriteChat);
+router.put('/favorite', checkToken.checkToken, chatController.favoriteChat);
 
 router.post(
   '/createCatalog',
@@ -136,7 +136,7 @@ router.post(
   chatController.createCatalog
 );
 
-router.post(
+router.put(
   '/updateNameCatalog',
   checkToken.checkToken,
   chatController.updateNameCatalog
@@ -148,18 +148,18 @@ router.post(
   chatController.addNewChatToCatalog
 );
 
-router.post(
+router.delete(
   '/removeChatFromCatalog',
   checkToken.checkToken,
   chatController.removeChatFromCatalog
 );
 
-router.post(
+router.delete(
   '/deleteCatalog',
   checkToken.checkToken,
   chatController.deleteCatalog
 );
 
-router.post('/getCatalogs', checkToken.checkToken, chatController.getCatalogs);
+router.get('/getCatalogs', checkToken.checkToken, chatController.getCatalogs);
 
 module.exports = router;

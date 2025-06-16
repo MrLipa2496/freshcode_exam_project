@@ -5,7 +5,7 @@ const chatQueries = require('./queries/chatQueries');
 
 module.exports.getChat = async (req, res, next) => {
   const currentUserId = req.tokenData.userId;
-  const interlocutorId = req.body.interlocutorId;
+  const interlocutorId = parseInt(req.query.interlocutorId, 10);
 
   const participants = [currentUserId, interlocutorId];
   const uniqueParticipants = [...new Set(participants)];
