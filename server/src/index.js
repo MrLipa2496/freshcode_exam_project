@@ -8,8 +8,7 @@ require('./dbMongo/mongoose');
 require('../src/utils/logBackup');
 const router = require('./router');
 const controller = require('./socketInit');
-const handlerError = require('./handlerError/handler');
-const errorHandler = require('./middlewares/errorHandlerMiddleware');
+const errorHandler = require('./middlewares/errorHandler');
 const logError = require('./utils/logger');
 
 const PORT = process.env.PORT || 3001;
@@ -21,7 +20,6 @@ app.use('/public', express.static(path.join(__dirname, '..', '..', 'public')));
 app.use(router);
 
 app.use(errorHandler);
-app.use(handlerError);
 
 process.on('uncaughtException', err => {
   logError(err);
