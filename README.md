@@ -177,7 +177,7 @@ This will:
 
 - Added error logger:
 
-  - Location: `server/utils/errorLogFunction.js`
+  - Location: `server/utils/logger.js`
   - Format:
     ```json
     {
