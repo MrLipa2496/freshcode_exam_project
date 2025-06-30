@@ -137,7 +137,6 @@ class ContestPage extends React.Component {
     } = contestByIdStore;
     return (
       <div>
-        {/* <Chat/> */}
         {isShowOnFull && (
           <LightBox
             mainSrc={`${CONSTANTS.publicURL}${imagePath}`}
@@ -204,7 +203,10 @@ class ContestPage extends React.Component {
             </div>
             <ContestSideBar
               contestData={contestData}
-              totalEntries={offers.length}
+              totalEntries={
+                offers.filter(o => o.status !== CONSTANTS.OFFER_STATUS_PENDING)
+                  .length
+              }
             />
           </div>
         )}

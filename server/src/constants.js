@@ -18,6 +18,7 @@ module.exports = {
   TAGLINE_CONTEST: 'tagline',
   OFFER_STATUS_PENDING: 'pending',
   OFFER_STATUS_REJECTED: 'rejected',
+  OFFER_STATUS_APPROVED_BY_MODERATOR: 'approved_by_moderator',
   OFFER_STATUS_WON: 'won',
   FILES_PATH: 'public/',
   SOCKET_CONNECTION: 'connection',
