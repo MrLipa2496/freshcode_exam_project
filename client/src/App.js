@@ -80,10 +80,15 @@ class App extends Component {
                   />
                 }
               />
-              <Route path='/dashboard' element={<Dashboard />} />
-              <Route path='/contest/:id' element={<ContestPage />} />
               <Route path='/account' element={<UserProfile />} />
             </Route>
+            <Route
+              element={<RoleRoute allowedRoles={['customer', 'creator']} />}
+            >
+              <Route path='/contest/:id' element={<ContestPage />} />
+              <Route path='/dashboard' element={<Dashboard />} />
+            </Route>
+
             <Route element={<RoleRoute allowedRoles={['moderator']} />}>
               <Route path='/offers' element={<OffersPage />} />
             </Route>
