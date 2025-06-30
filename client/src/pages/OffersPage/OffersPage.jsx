@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useFormik } from 'formik';
 import classNames from 'classnames';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
+import { MdOutlineCancel } from 'react-icons/md';
 import {
   getPendingOffers,
   updateOfferStatus,
@@ -33,21 +33,6 @@ const OffersPage = () => {
     setLoading(false);
   };
 
-  const formik = useFormik({
-    initialValues: { status: '' },
-    onSubmit: async values => {
-      if (!selectedOffer || !selectedOffer.id) {
-        alert('Offer ID is missing');
-        return;
-      }
-      try {
-        await updateOfferStatus(selectedOffer.id, { status: values.status });
-        await fetchOffers();
-        setModalOpen(false);
-      } catch (error) {}
-    },
-  });
-
   const handleEdit = offer => {
     if (!offer || !offer.id) {
       alert('Invalid offer');
@@ -55,7 +40,17 @@ const OffersPage = () => {
     }
     setSelectedOffer(offer);
     setModalOpen(true);
-    formik.setValues({ status: offer.status });
+  };
+
+  const handleStatusChange = async newStatus => {
+    if (!selectedOffer || !selectedOffer.id) return;
+    try {
+      await updateOfferStatus(selectedOffer.id, { status: newStatus });
+      await fetchOffers();
+      setModalOpen(false);
+    } catch (error) {
+      alert('Failed to update status');
+    }
   };
 
   return (
@@ -124,36 +119,28 @@ const OffersPage = () => {
           </div>
         </>
       )}
-      {modalOpen && (
+      {modalOpen && selectedOffer && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
-            <h2 className={styles.modalTitle}>Update offer status</h2>
-            <form onSubmit={formik.handleSubmit}>
-              <select
-                name='status'
-                value={formik.values.status}
-                onChange={formik.handleChange}
-                className={styles.statusSelect}
+            <h2 className={styles.modalTitle}>Update Offer Status</h2>
+            <div className={styles.modalActions}>
+              <button
+                className={styles.approveButton}
+                onClick={() => handleStatusChange('approved_by_moderator')}
               >
-                <option value='pending'>-</option>
-                <option value='approved_by_moderator'>
-                  Approved by Moderator
-                </option>
-                <option value='rejected'>Rejected by Moderator</option>
-              </select>
-              <div className={styles.modalActions}>
-                <button type='submit' className={styles.submitBtn}>
-                  Save
-                </button>
-                <button
-                  type='button'
-                  className={styles.cancelBtn}
-                  onClick={() => setModalOpen(false)}
-                >
-                  Cancel
-                </button>
-              </div>
-            </form>
+                Agree
+              </button>
+              <button
+                className={styles.rejectButton}
+                onClick={() => handleStatusChange('rejected')}
+              >
+                Reject
+              </button>
+              <MdOutlineCancel
+                onClick={() => setModalOpen(false)}
+                className={styles.cancelBtn}
+              />
+            </div>
           </div>
         </div>
       )}
