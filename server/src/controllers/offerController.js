@@ -47,9 +47,17 @@ module.exports.updateOfferStatus = async (req, res, next) => {
 
   try {
     const { id } = req.params;
-    const { status } = req.body;
+    let { status } = req.body;
 
-    if (!['approved_by_moderator', 'rejected'].includes(status)) {
+    if (status === 'rejected') {
+      status = 'rejected_by_moderator';
+    }
+
+    if (
+      !['approved_by_moderator', 'rejected', 'rejected_by_moderator'].includes(
+        status
+      )
+    ) {
       return res.status(400).send({ message: 'Invalid status update' });
     }
 

@@ -1,4 +1,5 @@
 .offerContainer
+  position: relative
   display: flex
   margin-top: 15px
   align-self: stretch
@@ -23,6 +24,34 @@
 
   .resolve
     color: green
+
+  .approvedText,
+  .rejectedText
+    position: absolute
+    top: 10px
+    left: 0
+    padding: 10px 15px
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    border-top-right-radius: 20px
+    border-bottom-right-radius: 20px
+    font-size: 14px
+    font-weight: 900
+    color: white
+    max-width: 200px
+    text-align: center
+
+    @media (max-width: 500px)
+      left: 50%
+      transform: translateX(-50%)
+      right: auto
+
+  .approvedText
+    background-color: orange
+
+  .rejectedText
+    background-color: red
+
 
   .btnsContainer
     margin: 5px 0
@@ -69,6 +98,7 @@
 
     .userInfo
       min-width: 215px
+      margin-top: 30px
 
     i
       cursor: pointer

@@ -52,7 +52,10 @@ class CustomerDashboard extends React.Component {
 
       const approvedOffers = Array.isArray(contest.Offers)
         ? contest.Offers.filter(o => {
-            return o.status !== CONSTANTS.OFFER_STATUS_PENDING;
+            return (
+              o.status !== CONSTANTS.OFFER_STATUS_PENDING &&
+              o.status !== CONSTANTS.OFFER_STATUS_REJECTED_BY_MODERATOR
+            );
           })
         : [];
 

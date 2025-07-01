@@ -204,8 +204,11 @@ class ContestPage extends React.Component {
             <ContestSideBar
               contestData={contestData}
               totalEntries={
-                offers.filter(o => o.status !== CONSTANTS.OFFER_STATUS_PENDING)
-                  .length
+                offers.filter(
+                  o =>
+                    o.status !== CONSTANTS.OFFER_STATUS_PENDING &&
+                    o.status !== CONSTANTS.OFFER_STATUS_REJECTED_BY_MODERATOR
+                ).length
               }
             />
           </div>

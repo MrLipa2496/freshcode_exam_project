@@ -16,6 +16,7 @@ export default {
   OFFER_STATUS_WON: 'won',
   OFFER_STATUS_PENDING: 'pending',
   OFFER_STATUS_APPROVED_BY_MODERATOR: 'approved_by_moderator',
+  OFFER_STATUS_REJECTED_BY_MODERATOR: 'rejected_by_moderator',
   EVENTS_STORAGE_KEY: 'events',
   VIEWED_NOTIFICATIONS_KEY: 'viewed_notifications',
   STATIC_IMAGES_PATH: STATIC_IMAGES_PATH,
