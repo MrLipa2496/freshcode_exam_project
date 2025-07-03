@@ -2,28 +2,34 @@ const bd = require('../models');
 const offerQueries = require('./queries/offerQueries');
 const { sendOfferStatusMail } = require('../utils/emailService');
 
+function calculatePagination (page, pageSize) {
+  const correctedPage = parseInt(page, 10) || 1;
+  const correctedPageSize = parseInt(pageSize, 10) || DEFAULT_PAGE_SIZE;
+  const offset = (correctedPage - 1) * correctedPageSize;
+  const limit = correctedPageSize;
+  return { offset, limit };
+}
+
 module.exports.getPendingOffers = async (req, res, next) => {
   try {
-    let { page = 1, pageSize = 5 } = req.query;
+    let { page = 1, pageSize = DEFAULT_PAGE_SIZE } = req.query;
 
     page = parseInt(page, 10);
     pageSize = parseInt(pageSize, 10);
 
     if (isNaN(page) || page < 1) page = 1;
-    if (isNaN(pageSize) || pageSize < 1 || pageSize > 100) pageSize = 5;
+    if (isNaN(pageSize) || pageSize < 1 || pageSize > 100)
+      pageSize = DEFAULT_PAGE_SIZE;
 
-    const offset = (page - 1) * pageSize;
-    const limit = pageSize;
+    const { offset, limit } = calculatePagination(page, pageSize);
 
     const { rows: offers, count } = await offerQueries.getAllOffers(
       offset,
       limit
     );
 
-    const pendingOffers = offers.filter(offer => offer.status === 'pending');
-
     res.send({
-      offers: pendingOffers.map(offer => ({
+      offers: offers.map(offer => ({
         id: offer.id,
         userId: offer.userId,
         contestId: offer.contestId,
@@ -31,13 +37,17 @@ module.exports.getPendingOffers = async (req, res, next) => {
         fileName: offer.fileName,
         originalFileName: offer.originalFileName,
         status: offer.status,
+        contest: {
+          name: offer.Contest?.title,
+          type: offer.Contest?.contestType,
+        },
       })),
       totalPages: Math.ceil(count / pageSize),
       currentPage: page,
       totalOffers: count,
     });
   } catch (err) {
-    console.error('Error fetching pending offers:', err);
+    console.error('Error fetching offers:', err);
     next(err);
   }
 };
@@ -64,12 +74,6 @@ module.exports.updateOfferStatus = async (req, res, next) => {
     const offer = await offerQueries.findOffer({ id }, transaction);
     if (!offer) {
       return res.status(404).send({ message: 'Offer not found' });
-    }
-
-    if (offer.status !== 'pending') {
-      return res
-        .status(400)
-        .send({ message: 'Offer must be in pending status to be moderated' });
     }
 
     const updatedOffer = await offerQueries.updateOfferStatus(

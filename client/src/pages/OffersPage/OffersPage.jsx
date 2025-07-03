@@ -6,6 +6,7 @@ import {
   getPendingOffers,
   updateOfferStatus,
 } from '../../api/rest/restController';
+import CONSTANTS from './../../constants';
 import styles from './OffersPage.module.sass';
 
 const OffersPage = () => {
@@ -55,7 +56,7 @@ const OffersPage = () => {
 
   return (
     <div className={styles.offersPage}>
-      <h1 className={styles.title}>Offers Pending Moderation</h1>
+      <h1 className={styles.title}>Offers Moderation</h1>
       {loading ? (
         <div className={styles.spinner}>Loading...</div>
       ) : (
@@ -64,34 +65,63 @@ const OffersPage = () => {
             <table className={styles.offersTable}>
               <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>User ID</th>
-                  <th>Contest ID</th>
-                  <th>Text</th>
+                  <th>Contest Name</th>
+                  <th>Contest Type</th>
+                  <th>Offer Text</th>
+                  <th>File</th>
                   <th>Status</th>
                   <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
-                {offers.map(offer => (
+                {offers.map((offer, index) => (
                   <tr
-                    key={offer.id}
+                    key={index}
                     className={classNames({
                       [styles.pending]: offer.status === 'pending',
+                      [styles.approved]:
+                        offer.status === 'approved_by_moderator',
+                      [styles.rejected]: offer.status === 'rejected',
                     })}
                   >
-                    <td>{offer.id}</td>
-                    <td>{offer.userId}</td>
-                    <td>{offer.contestId}</td>
-                    <td>{offer.text}</td>
+                    <td>{offer.contest?.name || '—'}</td>
+                    <td>{offer.contest?.type || '—'}</td>
+                    <td>{offer.text || '—'}</td>
+                    <td>
+                      {offer.fileName ? (
+                        <a
+                          href={`${CONSTANTS.publicURL}${offer.fileName}`}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className={styles.fileLink}
+                        >
+                          View File
+                        </a>
+                      ) : (
+                        '—'
+                      )}
+                    </td>
                     <td>{offer.status}</td>
                     <td>
-                      <button
-                        className={styles.editBtn}
-                        onClick={() => handleEdit(offer)}
-                      >
-                        Change status
-                      </button>
+                      {{
+                        rejected: (
+                          <span className={styles.rejectedByByer}>
+                            Buyer rejected
+                          </span>
+                        ),
+                        won: (
+                          <span className={styles.approvedByByer}>
+                            Buyer approved
+                          </span>
+                        ),
+                      }[offer.status] || (
+                        <button
+                          className={styles.editBtn}
+                          onClick={() => handleEdit(offer)}
+                        >
+                          Change status
+                        </button>
+                      )}
                     </td>
                   </tr>
                 ))}
@@ -128,7 +158,7 @@ const OffersPage = () => {
                 className={styles.approveButton}
                 onClick={() => handleStatusChange('approved_by_moderator')}
               >
-                Agree
+                Approve
               </button>
               <button
                 className={styles.rejectButton}
