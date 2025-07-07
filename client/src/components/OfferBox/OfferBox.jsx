@@ -95,6 +95,16 @@ const OfferBox = props => {
         />
       );
     }
+    if (status === CONSTANTS.OFFER_STATUS_REJECTED_BY_MODERATOR) {
+      return <span className={styles.rejectedText}>REJECTED BY MODERATOR</span>;
+    }
+    if (status === CONSTANTS.OFFER_STATUS_APPROVED_BY_MODERATOR) {
+      return <span className={styles.approvedText}>APPROVED BY MODERATOR</span>;
+    }
+    if (status === CONSTANTS.OFFER_STATUS_PENDING) {
+      return <span className={styles.pendingText}>OFFER IS PENDING</span>;
+    }
+
     return null;
   };
 

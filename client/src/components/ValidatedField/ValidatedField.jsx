@@ -5,7 +5,7 @@ import styles from './ValidatedField.module.sass';
 function ValidatedField ({ name, type, placeholder, as = 'input', children }) {
   return (
     <div className={styles.fieldContainer}>
-      <Field name={name} as={as}>
+      <Field name={name}>
         {({ field, form }) => {
           const { errors, touched } = form;
           const className = classNames(styles.input, {

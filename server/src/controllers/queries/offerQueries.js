@@ -12,10 +12,6 @@ module.exports.updateOfferStatus = async (data, offerId, transaction) => {
     throw new NotFound('Offer not found');
   }
 
-  if (offer.status !== 'pending') {
-    throw new ServerError('Offer must be in pending status to be moderated');
-  }
-
   const [updatedCount, [updatedOffer]] = await bd.Offers.update(data, {
     where: { id: offerId },
     returning: true,
@@ -48,10 +44,15 @@ module.exports.getUserById = async (userId, transaction) => {
 
 module.exports.getAllOffers = async (offset, limit) => {
   const result = await bd.Offers.findAndCountAll({
-    where: { status: 'pending' },
     limit,
     offset,
     order: [['id', 'DESC']],
+    include: [
+      {
+        model: bd.Contests,
+        attributes: ['nameVenture', 'contestType', 'fileName', 'title'],
+      },
+    ],
   });
 
   return result;

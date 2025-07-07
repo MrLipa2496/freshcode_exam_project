@@ -16,6 +16,7 @@ class CustomerDashboard extends React.Component {
   loadMore = startFrom => {
     this.props.getContests({
       limit: 8,
+      ownEntries: false,
       offset: startFrom,
       contestStatus: this.props.customerFilter,
     });
@@ -28,6 +29,7 @@ class CustomerDashboard extends React.Component {
   getContests = () => {
     this.props.getContests({
       limit: 8,
+      ownEntries: false,
       contestStatus: this.props.customerFilter,
     });
   };
@@ -46,10 +48,24 @@ class CustomerDashboard extends React.Component {
     const array = [];
     const { contests } = this.props;
     for (let i = 0; i < contests.length; i++) {
+      const contest = contests[i];
+
+      const approvedOffers = Array.isArray(contest.Offers)
+        ? contest.Offers.filter(o => {
+            return (
+              o.status !== CONSTANTS.OFFER_STATUS_PENDING &&
+              o.status !== CONSTANTS.OFFER_STATUS_REJECTED_BY_MODERATOR
+            );
+          })
+        : [];
+
       array.push(
         <ContestBox
-          data={contests[i]}
-          key={contests[i].id}
+          key={contest.id}
+          data={{
+            ...contest,
+            approvedOffersCount: approvedOffers.length,
+          }}
           goToExtended={this.goToExtended}
         />
       );

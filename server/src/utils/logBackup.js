@@ -1,22 +1,26 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
 const cron = require('node-cron');
 
 const logFilePath = path.join(__dirname, './logs/error.log');
 const backupDir = path.join(__dirname, './logs/backup');
 
-if (!fs.existsSync(logFilePath)) {
-  fs.mkdirSync(path.dirname(logFilePath), { recursive: true });
-  fs.writeFileSync(logFilePath, '');
+async function initLogFile () {
+  try {
+    await fs.mkdir(path.dirname(logFilePath), { recursive: true });
+    await fs.writeFile(logFilePath, '', { flag: 'a' });
+  } catch (error) {
+    console.error('Failed to init log file:', error);
+  }
 }
 
-const backupLogs = () => {
-  try {
-    if (!fs.existsSync(backupDir)) {
-      fs.mkdirSync(backupDir, { recursive: true });
-    }
+initLogFile();
 
-    const data = fs.readFileSync(logFilePath, 'utf8');
+const backupLogs = async () => {
+  try {
+    await fs.mkdir(backupDir, { recursive: true });
+
+    const data = await fs.readFile(logFilePath, 'utf8');
     if (!data.trim()) return;
 
     const transformedData = data
@@ -38,8 +42,11 @@ const backupLogs = () => {
     const dateStamp = new Date().toISOString().split('T')[0];
     const backupFilePath = path.join(backupDir, `error-${dateStamp}.log`);
 
-    fs.writeFileSync(backupFilePath, JSON.stringify(transformedData, null, 2));
-    fs.writeFileSync(logFilePath, '');
+    await fs.writeFile(
+      backupFilePath,
+      JSON.stringify(transformedData, null, 2)
+    );
+    await fs.writeFile(logFilePath, '');
 
     console.log(`Backup created: ${backupFilePath}`);
   } catch (error) {

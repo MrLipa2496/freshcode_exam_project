@@ -2,7 +2,7 @@ import { Navigate, Outlet } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Spiner from '../../Spinner/Spinner';
 
-const ModeratorRoute = () => {
+const RoleRoute = ({ allowedRoles }) => {
   const { data: user, isFetching } = useSelector(state => state.userStore);
 
   if (isFetching) {
@@ -13,11 +13,11 @@ const ModeratorRoute = () => {
     return <Navigate to='/login' replace />;
   }
 
-  if (user.role !== 'moderator') {
+  if (!allowedRoles.includes(user.role)) {
     return <Navigate to='/' replace />;
   }
 
   return <Outlet />;
 };
 
-export default ModeratorRoute;
+export default RoleRoute;
