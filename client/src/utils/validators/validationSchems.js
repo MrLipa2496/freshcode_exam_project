@@ -194,8 +194,9 @@ export default {
       .required('required'),
     file: yup.mixed(),
   }),
+
   MessageSchema: yup.object({
-    message: yup.string(),
+    message: yup.string().trim().required('').min(1, ''),
   }),
   CatalogSchema: yup.object({
     catalogName: yup
