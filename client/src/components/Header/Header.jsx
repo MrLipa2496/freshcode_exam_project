@@ -83,13 +83,16 @@ class Header extends React.Component {
                   <span>My Account</span>
                 </Link>
               </li>
-              <li>
-                <Link to='/events' onClick={this.handleViewEvents}>
-                  <span className={styles.events}>
-                    My Events <BadgeNotification count={notifications} />
-                  </span>
-                </Link>
-              </li>
+              {this.props.data?.role === CONSTANTS.CUSTOMER && (
+                <li>
+                  <Link to='/events' onClick={this.handleViewEvents}>
+                    <span className={styles.events}>
+                      My Events <BadgeNotification count={notifications} />
+                    </span>
+                  </Link>
+                </li>
+              )}
+
               <li>
                 <Link
                   to='http:/www.google.com'

@@ -194,8 +194,9 @@ export default {
       .required('required'),
     file: yup.mixed(),
   }),
+
   MessageSchema: yup.object({
-    message: yup.string(),
+    message: yup.string().trim().required('').min(1, ''),
   }),
   CatalogSchema: yup.object({
     catalogName: yup
@@ -252,6 +253,32 @@ export default {
       .number()
       .required('Notification time is required')
       .min(1, 'Must be at least 1 minute')
-      .max(1440, 'Cannot exceed 1440 minutes (24 hours)'),
+      .max(1440, 'Cannot exceed 1440 minutes (24 hours)')
+      .test(
+        'is-not-too-close',
+        'Event is too soon for this reminder time',
+        function (value) {
+          const { eventDate, eventTime } = this.parent;
+          if (!eventDate || !eventTime || !value) return true;
+
+          const eventDateObj =
+            typeof eventDate === 'string' ? parseISO(eventDate) : eventDate;
+
+          if (isNaN(eventDateObj)) return false;
+
+          const [hours, minutes] = eventTime.split(':').map(Number);
+          const eventTimestamp = set(eventDateObj, {
+            hours,
+            minutes,
+            seconds: 0,
+            milliseconds: 0,
+          }).getTime();
+
+          const now = Date.now();
+          const notifyTimeMs = value * 60 * 1000;
+
+          return eventTimestamp - now > notifyTimeMs;
+        }
+      ),
   }),
 };

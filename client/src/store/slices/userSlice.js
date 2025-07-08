@@ -22,7 +22,7 @@ export const getUser = createAsyncThunk(
       if (navigate) {
         navigate('/', { replace: true });
       }
-      return { userData: data, userRole: data.role }; // assuming the role is in the response
+      return { userData: data, userRole: data.role };
     } catch (err) {
       return rejectWithValue({
         data: err?.response?.data ?? 'Gateway Timeout',

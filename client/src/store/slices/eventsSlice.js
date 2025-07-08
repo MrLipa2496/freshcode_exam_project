@@ -13,17 +13,6 @@ const loadViewedNotificationsFromLocalStorage = () => {
   return viewedNotifications ? JSON.parse(viewedNotifications) : [];
 };
 
-const saveEventsToLocalStorage = events => {
-  localStorage.setItem(CONSTANTS.EVENTS_STORAGE_KEY, JSON.stringify(events));
-};
-
-const saveViewedNotificationsToLocalStorage = viewedNotifications => {
-  localStorage.setItem(
-    CONSTANTS.VIEWED_NOTIFICATIONS_KEY,
-    JSON.stringify(viewedNotifications)
-  );
-};
-
 const eventsSlice = createSlice({
   name: CONSTANTS.EVENTS_STORAGE_KEY,
   initialState: {
@@ -32,16 +21,14 @@ const eventsSlice = createSlice({
   },
   reducers: {
     addEvent (state, action) {
-      state.events.push({ ...action.payload, completed: false });
-      saveEventsToLocalStorage(state.events);
+      const newEvent = { ...action.payload, completed: false };
+      state.events.push(newEvent);
     },
     deleteEvent (state, action) {
       state.events = state.events.filter(event => event.id !== action.payload);
-      saveEventsToLocalStorage(state.events);
     },
     clearEvents (state) {
       state.events = [];
-      saveEventsToLocalStorage(state.events);
     },
     markNotificationsAsViewed (state) {
       state.viewedNotifications = [
@@ -50,7 +37,6 @@ const eventsSlice = createSlice({
           ...state.events.map(event => event.id),
         ]),
       ];
-      saveViewedNotificationsToLocalStorage(state.viewedNotifications);
     },
     updateEvents (state) {
       const now = Date.now();
@@ -61,7 +47,6 @@ const eventsSlice = createSlice({
         }
         return event;
       });
-      saveEventsToLocalStorage(state.events);
     },
   },
 });

@@ -1,0 +1,77 @@
+$blue-color: #5e91dd
+
+.offersTableContainer
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch 
+  
+.offersTable
+  width: 100%
+  table-layout: fixed 
+  border-collapse: collapse
+  min-height: 500px 
+
+th, td
+  padding: 12px
+  border: 1px solid #ddd
+  text-align: left
+  overflow-wrap: break-word
+
+th
+  background-color: #f9f9f9
+  font-weight: bold
+
+.fileLink
+  text-decoration: none
+  font-weight: 900
+  color: $blue-color
+  transition: .2s linear
+  &:hover
+    color: red
+
+
+.pending
+  background-color: #ffe5b4
+
+.won
+  background-color: #d4edda
+
+.rejected
+  background-color: #f8d7da
+
+.editBtn, .deleteBtn
+  color: white
+  padding: 8px 16px
+  border: none
+  cursor: pointer
+  border-radius: 4px
+
+.rejectedByByer,
+.approvedByByer
+  font-size: 14px
+  font-weight: 900
+  color: white
+  padding: 5px
+  line-height: 1.5
+
+.editBtn
+  background-color: $blue-color
+  transition: .2s linear
+  &:hover
+    background-color: #2c77e7
+
+.rejectedByByer
+  background-color: red
+
+.approvedByByer
+  background-color: green
+
+
+@media (max-width: 900px)
+  .offersTableContainer
+    width: 100%
+    overflow-x: auto 
+  .offersTable
+    min-width: 900px 

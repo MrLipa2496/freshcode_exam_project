@@ -111,7 +111,6 @@ This will:
 - Bugs fixed across the app
 - All libraries updated
 - Docker images updated
-- Class components converted to functional
 - Removed unused imports and cleaned up code
 - Ensured unified code style in queries, controllers, and components
 
@@ -178,7 +177,7 @@ This will:
 
 - Added error logger:
 
-  - Location: `server/utils/errorLogFunction.js`
+  - Location: `server/utils/logger.js`
   - Format:
     ```json
     {

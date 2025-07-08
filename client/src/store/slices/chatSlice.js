@@ -81,31 +81,45 @@ export const sendMessage = decorateAsyncThunk({
   },
 });
 
+const updateOrPushPreview = (previews, newPreview, newMessage) => {
+  const updated = previews.map(preview =>
+    preview._id === newPreview._id
+      ? {
+          ...preview,
+          text: newMessage.body,
+          sender: newMessage.sender,
+          createdAt: newMessage.createdAt,
+        }
+      : preview
+  );
+
+  const exists = previews.some(p => p._id === newPreview._id);
+  return exists ? updated : [...updated, newPreview];
+};
+
 const sendMessageExtraReducers = createExtraReducers({
   thunk: sendMessage,
   fulfilledReducer: (state, { payload }) => {
-    const { messagesPreview } = state;
-    let isNew = true;
-    messagesPreview.forEach(preview => {
-      if (isEqual(preview.participants, payload.message.participants)) {
-        preview.text = payload.message.body;
-        preview.sender = payload.message.sender;
-        preview.createAt = payload.message.createdAt;
-        isNew = false;
-      }
-    });
-    if (isNew) {
-      messagesPreview.push(payload.preview);
-    }
-    const chatData = {
-      _id: payload.preview._id,
-      participants: payload.preview.participants,
-      favoriteList: payload.preview.favoriteList,
-      blackList: payload.preview.blackList,
+    const { preview, message } = payload;
+
+    state.messagesPreview = updateOrPushPreview(
+      state.messagesPreview,
+      preview,
+      message
+    );
+
+    state.chatData = {
+      ...state.chatData,
+      ...preview,
     };
-    state.chatData = { ...state.chatData, ...chatData };
-    state.messagesPreview = messagesPreview;
-    state.messages = [...state.messages, payload.message];
+
+    if (!state.messages || state.chatData._id !== message.conversation_id) {
+      state.messages = [message];
+    } else {
+      state.messages = [...state.messages, message];
+    }
+
+    state.error = null;
   },
   rejectedReducer: (state, { payload }) => {
     state.error = payload;
@@ -131,7 +145,7 @@ const changeChatFavoriteExtraReducers = createExtraReducers({
           favoriteList: [...payload.favoriteList],
         };
       }
-      return { ...preview }; // <- важливо! Створюємо нову референцію
+      return { ...preview };
     });
 
     state.chatData = {
@@ -163,7 +177,7 @@ const changeChatBlockExtraReducers = createExtraReducers({
           blackList: [...payload.blackList],
         };
       }
-      return { ...preview }; // <- навіть якщо нічого не змінюємо, робимо shallow copy
+      return { ...preview };
     });
 
     state.chatData = {
@@ -322,6 +336,7 @@ const changeCatalogNameExtraReducers = createExtraReducers({
   },
 });
 //-------------------------------------------------------
+const normalizeParticipants = arr => [...arr].sort((a, b) => a - b);
 
 const reducers = {
   changeBlockStatusInStore: (state, { payload }) => {
@@ -346,21 +361,28 @@ const reducers = {
 
   addMessage: (state, { payload }) => {
     const { message, preview } = payload;
-    const { messagesPreview } = state;
     let isNew = true;
-    messagesPreview.forEach(preview => {
-      if (isEqual(preview.participants, message.participants)) {
+
+    const msgParticipants = normalizeParticipants(message.participants);
+
+    state.messagesPreview = state.messagesPreview.map(preview => {
+      const previewParticipants = normalizeParticipants(preview.participants);
+      if (isEqual(previewParticipants, msgParticipants)) {
         preview.text = message.body;
         preview.sender = message.sender;
-        preview.createAt = message.createdAt;
+        preview.createdAt = message.createdAt;
         isNew = false;
       }
+      return preview;
     });
+
     if (isNew) {
-      messagesPreview.push(preview);
+      state.messagesPreview.push(preview);
     }
-    state.messagesPreview = messagesPreview;
-    state.messages = [...state.messages, payload.message];
+
+    if (state.chatData._id === message.conversation_id) {
+      state.messages = [...state.messages, message];
+    }
   },
 
   backToDialogList: state => {
