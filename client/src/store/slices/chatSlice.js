@@ -108,12 +108,14 @@ const sendMessageExtraReducers = createExtraReducers({
       message
     );
 
-    if (state.chatData._id === preview._id) {
-      state.chatData = {
-        ...state.chatData,
-        ...preview,
-      };
+    state.chatData = {
+      ...state.chatData,
+      ...preview,
+    };
 
+    if (!state.messages || state.chatData._id !== message.conversation_id) {
+      state.messages = [message];
+    } else {
       state.messages = [...state.messages, message];
     }
 
