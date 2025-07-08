@@ -73,22 +73,15 @@ module.exports.addMessage = async (req, res, next) => {
   const recipientId = Number(req.body.recipient);
   const messageBody = req.body.messageBody;
 
-  const participantsSorted = [senderId, recipientId].sort((a, b) => a - b);
+  const participants = [senderId, recipientId].sort((a, b) => a - b);
 
   try {
     let conversationData = await chatQueries.findConversationByParticipants(
-      participantsSorted
+      participants
     );
 
     if (!conversationData) {
-      conversationData = await chatQueries.findConversationByParticipants(
-        participantsSorted
-      );
-      if (!conversationData) {
-        conversationData = await chatQueries.createConversation(
-          participantsSorted
-        );
-      }
+      conversationData = await chatQueries.createConversation(participants);
     }
 
     const { conversation, blackList, favoriteList } = conversationData;
@@ -99,20 +92,17 @@ module.exports.addMessage = async (req, res, next) => {
       conversation_id: conversation.id,
     });
 
-    const participantsForSender = [senderId, recipientId];
-    const participantsForRecipient = [recipientId, senderId];
-
     controller.getChatController().emitNewMessage(recipientId, {
       message: {
         ...message.get({ plain: true }),
-        participants: participantsForRecipient,
+        participants,
       },
       preview: {
         _id: conversation.id,
         sender: senderId,
         text: messageBody,
         createdAt: message.createdAt,
-        participants: participantsForRecipient,
+        participants,
         blackList,
         favoriteList,
         interlocutor: {
@@ -129,14 +119,14 @@ module.exports.addMessage = async (req, res, next) => {
     res.send({
       message: {
         ...message.get({ plain: true }),
-        participants: participantsForSender,
+        participants,
       },
       preview: {
         _id: conversation.id,
         sender: senderId,
         text: messageBody,
         createdAt: message.createdAt,
-        participants: participantsForSender,
+        participants,
         blackList,
         favoriteList,
         interlocutor: {
