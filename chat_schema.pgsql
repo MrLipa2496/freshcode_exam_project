@@ -38,7 +38,7 @@ CREATE TABLE messages (
                           ON DELETE CASCADE 
                           ON UPDATE CASCADE,
     conversation_id VARCHAR(50) NOT NULL,
-    body TEXT NOT NULL,
+    body TEXT NOT NULL
 );
 
 CREATE TABLE catalog_chats (
