@@ -73,11 +73,13 @@ class Header extends React.Component {
               alt='menu'
             />
             <ul>
-              <li>
-                <Link to='/dashboard' style={{ textDecoration: 'none' }}>
-                  <span>View Dashboard</span>
-                </Link>
-              </li>
+              {this.props.data?.role !== CONSTANTS.MODERATOR && (
+                <li>
+                  <Link to='/dashboard' style={{ textDecoration: 'none' }}>
+                    <span>View Dashboard</span>
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link to='/account' style={{ textDecoration: 'none' }}>
                   <span>My Account</span>
