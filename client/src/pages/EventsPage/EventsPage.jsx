@@ -1,21 +1,22 @@
-import { useState } from 'react';
-import BadgeNotification from '../../components/BadgeNotification/BadgeNotification';
+import { useSelector, useDispatch } from 'react-redux';
 import EventForm from '../../components/EventForm/EventForm';
 import TimerList from '../../components/TimerList/TimerList';
 import styles from './EventsPage.module.sass';
+import { setCurrentUser } from '../../store/slices/eventsSlice';
+import { useEffect } from 'react';
 
 function EventsPage () {
-  const [events, setEvents] = useState([]);
+  const dispatch = useDispatch();
+  const userId = useSelector(state => state.userStore.data.id);
 
-  const handleAddEvent = newEvent => {
-    setEvents(prev =>
-      [...prev, newEvent].sort((a, b) => a.eventTimestamp - b.eventTimestamp)
-    );
-  };
+  useEffect(() => {
+    if (userId) {
+      console.log('Dispatching setCurrentUser with userId:', userId);
+      dispatch(setCurrentUser(userId));
+    }
+  }, [dispatch, userId]);
 
-  const handleDeleteEvent = id => {
-    setEvents(prevEvents => prevEvents.filter(event => event.id !== id));
-  };
+  if (!userId) return <div>Loading user...</div>;
 
   return (
     <div className={styles.container}>
@@ -26,8 +27,8 @@ function EventsPage () {
         thing.
       </p>
       <div className={styles.formListContainer}>
-        <EventForm onAddEvent={handleAddEvent} />
-        <TimerList events={events} onDeleteEvent={handleDeleteEvent} />
+        <EventForm />
+        <TimerList />
       </div>
     </div>
   );

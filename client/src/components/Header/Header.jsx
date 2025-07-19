@@ -6,6 +6,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import styles from './Header.module.sass';
 import CONSTANTS from '../../constants';
 import { clearUserStore } from '../../store/slices/userSlice';
+import { setCurrentUser } from '../../store/slices/eventsSlice';
 import { getUser } from '../../store/slices/userSlice';
 import withRouter from '../../hocs/withRouter';
 import BadgeNotification from '../BadgeNotification/BadgeNotification';
@@ -41,7 +42,8 @@ class Header extends React.Component {
   };
 
   logOut = () => {
-    localStorage.clear();
+    localStorage.removeItem('accessToken');
+    setCurrentUser(null);
     this.props.clearUserStore();
     this.props.navigate('/login', { replace: true });
   };
@@ -73,11 +75,13 @@ class Header extends React.Component {
               alt='menu'
             />
             <ul>
-              <li>
-                <Link to='/dashboard' style={{ textDecoration: 'none' }}>
-                  <span>View Dashboard</span>
-                </Link>
-              </li>
+              {this.props.data?.role !== CONSTANTS.MODERATOR && (
+                <li>
+                  <Link to='/dashboard' style={{ textDecoration: 'none' }}>
+                    <span>View Dashboard</span>
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link to='/account' style={{ textDecoration: 'none' }}>
                   <span>My Account</span>
